@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="utf-8">
-  <title>SIUT</title>
+	<meta charset="utf-8">
+  <title>SIUT WEB</title>
+  <i class="fas fa-tilde    "></i>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,9 +31,8 @@
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
 </head>
-
 <body>
-  <!-- preloader start -->
+	<!-- preloader start -->
   <div class="preloader">
     <img src="images/preloader.gif" alt="preloader">
   </div>
@@ -55,7 +54,7 @@
           <ul class="list-inline">
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">Noticias</a></li>
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">¡Soy Utsoe!</a></li>
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">Cerrar Sesión</a></li>
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">Buscar</a></li>
           </ul>
         </div>
@@ -74,63 +73,57 @@
 
         <div class="collapse navbar-collapse" id="navigation" style="margin-left: -10px;">
           <ul class="navbar-nav ml-auto text-center">
-            <li class="nav-item @@home">
+            <li class="nav-item active">
               <a class="nav-link" href="index.html">INICIO</a>
             </li>
+            
             <li class="nav-item @@blog">
               <a class="nav-link" href="blog.html">BLOG</a>
             </li>
-            <li class="nav-item @@courses">
-              <a class="nav-link" href="eventns.html">EVENTOS</a>
+            <li class="nav-item @@events">
+              <a class="nav-link" href="events.html">EVENTOS</a>
             </li>
             <li class="nav-item @@courses">
               <a class="nav-link" href="courses.html">CURSOS</a>
             </li>
-            
             <li class="nav-item dropdown view">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                ESCOLARES
+                ALUMNOS
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="teacher.html">Trámites y Servicios</a>
-                <a class="dropdown-item" href="teacher-single.html">Becas</a>
-                <a class="dropdown-item" href="notice.html">Servicios Social</a>
-                <a class="dropdown-item" href="notice-single.html">Resultados de Exámenes</a>
-                <a class="dropdown-item" href="research.html">Proceso de Titulación</a>
-                <a class="dropdown-item" href="scholarship.html">Calendario Escolar</a>
-                <a class="dropdown-item" href="event-single.html">SIUT</a>
-                <a class="dropdown-item" href="blog-single.html">COMUT</a>
+                <a class="dropdown-item" href="#">Editar Datos Personales</a>
+                <a class="dropdown-item" href="#">Pagos</a>
+                <a class="dropdown-item" href="#">Reinscripción en Línea</a>
               </div>
             </li>
             <li class="nav-item dropdown view">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                VINVULACIÓN
+                REPORTES
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="teacher.html">Internacionalización</a>
-                    <a class="dropdown-item" href="teacher.html">Cursos de Educación</a>
-                    <a class="dropdown-item" href="teacher.html">Servicios Tecnológicos</a>
-                    <a class="dropdown-item" href="teacher.html">Incubadora de Negocios</a>
-                    <a class="dropdown-item" href="teacher.html">Estadías</a>
-                    <a class="dropdown-item" href="teacher.html">Seguimiento a Egresados</a>
+                    <a class="dropdown-item" href="#">Adeudos de Alumnos</a>
+                    <a class="dropdown-item" href="#">Consulta Promedios</a>
+                    <a class="dropdown-item" href="#">Concultar Documentación Electrónica</a>
+                    <a class="dropdown-item" href="#">Concultar Mis Calificaciones</a>
+                    <a class="dropdown-item" href="#">Historial de Pagos</a>
+                    <a class="dropdown-item" href="#">Reimprime Formato de Inscripción</a>
                 </div>
             </li>
             <li class="nav-item dropdown view">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                TRANSPARENCIA
+                Utilerías
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin-left: -60px; ">
-                    <a class="dropdown-item" href="teacher.html">Acceso a la Información</a>
-                    <a class="dropdown-item" href="teacher.html">Armonización contable</a>
-                    <a class="dropdown-item" href="teacher.html">Consejo Directivo</a>
-                    <a class="dropdown-item" href="teacher.html">Normateca</a>
-                    <a class="dropdown-item" href="teacher.html">Contraloria Social</a>
-                    <a class="dropdown-item" href="teacher.html">Comité de Ética</a>
-                    <a class="dropdown-item" href="teacher.html">SGCA</a>
-                    <a class="dropdown-item" href="teacher.html">Comité De Ambiental</a>
+                    <a class="dropdown-item" href="#">Cambio de Contraseña</a>
+                    <a class="dropdown-item" href="#">Internacionalización</a>
+                    <a class="dropdown-item" href="#">Cursos de Educación</a>
+                    <a class="dropdown-item" href="#">Servicios Tecnológicos</a>
+                    <a class="dropdown-item" href="#">Incubadora de Negocios</a>
+                    <a class="dropdown-item" href="#">Estadías</a>
+                    <a class="dropdown-item" href="#">Seguimiento de Egresados</a>
                 </div>
             </li>
             <li class="nav-item @@contact">
@@ -143,6 +136,7 @@
   </div>
 </header>
 <!-- /header -->
+
 <!-- Modal -->
 <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -207,154 +201,34 @@
     </div>
 </div>
 
-<!-- page title -->
-<section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
+<!-- SECCION DONDE SE EDITARA EL CONTENIDO DE CADA PAGINA CORRESPONDIENTE-->
+<!--Si NO ENTIENDES LA FUNCION DE UNA CLASS PREGUNTA!!!  No modifiques la lineas de CLASS-->
+<section class="hero-section by-cover">
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
-        <ul class="list-inline custom-breadcrumb">
-          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="@@page-link">Our Blog</a></li>
-          <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
-        </ul>
-        <p class="text-lighten">Our courses offer a good compromise between the continuous assessment favoured by some universities and the emphasis placed on final exams by others.</p>
+      <div class="col-12">
+        <h2 class="section-title" style="text-align: center;">Espacio para Editar</h2>
+        <!--Espacio para editar esta seccion sin cambiar las clases 
+        	para que no se pierda el diseño
+        	*******Si no Requieres de un titulo quita el <h2>******* -->
       </div>
     </div>
+    <div class="row justify-content-center">
+    	<!--En este espacio puedes agrear el contenido correspondiente 
+    		a la pagina que te corresponde editar-->
+    		<!--AQUI PUEDES AGREGAR TUS DIV, ETIQUETAS HTML, ETC QUE REQUIERAS y poner
+    			las CLASS que consideres buenas para el diseño-->
+	</div>
   </div>
 </section>
-<!-- /page title -->
+<!-- /blog -->
 
-<!-- blogs -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <!-- blog post -->
-      <article class="col-lg-4 col-sm-6 mb-5">
-        <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="Post thumb">
-          <div class="card-body">
-            <!-- post meta -->
-            <ul class="list-inline mb-3">
-              <!-- post date -->
-              <li class="list-inline-item mr-3 ml-0">August 28, 2018</li>
-              <!-- author -->
-              <li class="list-inline-item mr-3 ml-0">By Somrat Sorkar</li>
-            </ul>
-            <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-            <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
-          </div>
-        </div>
-      </article>
-      <!-- blog post -->
-      <article class="col-lg-4 col-sm-6 mb-5">
-        <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/blog/post-2.jpg" alt="Post thumb">
-          <div class="card-body">
-            <!-- post meta -->
-            <ul class="list-inline mb-3">
-              <!-- post date -->
-              <li class="list-inline-item mr-3 ml-0">August 13, 2018</li>
-              <!-- author -->
-              <li class="list-inline-item mr-3 ml-0">By Jonathon Drew</li>
-            </ul>
-            <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-            <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
-          </div>
-        </div>
-      </article>
-      <!-- blog post -->
-      <article class="col-lg-4 col-sm-6 mb-5">
-        <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb">
-          <div class="card-body">
-            <!-- post meta -->
-            <ul class="list-inline mb-3">
-              <!-- post date -->
-              <li class="list-inline-item mr-3 ml-0">August 24, 2018</li>
-              <!-- author -->
-              <li class="list-inline-item mr-3 ml-0">By Alex Pitt</li>
-            </ul>
-            <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-            <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
-          </div>
-        </div>
-      </article>
-      <!-- blog post -->
-      <article class="col-lg-4 col-sm-6 mb-5">
-        <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="Post thumb">
-          <div class="card-body">
-            <!-- post meta -->
-            <ul class="list-inline mb-3">
-              <!-- post date -->
-              <li class="list-inline-item mr-3 ml-0">August 28, 2018</li>
-              <!-- author -->
-              <li class="list-inline-item mr-3 ml-0">By Somrat Sorkar</li>
-            </ul>
-            <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-            <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
-          </div>
-        </div>
-      </article>
-      <!-- blog post -->
-      <article class="col-lg-4 col-sm-6 mb-5">
-        <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/blog/post-2.jpg" alt="Post thumb">
-          <div class="card-body">
-            <!-- post meta -->
-            <ul class="list-inline mb-3">
-              <!-- post date -->
-              <li class="list-inline-item mr-3 ml-0">August 13, 2018</li>
-              <!-- author -->
-              <li class="list-inline-item mr-3 ml-0">By Jonathon Drew</li>
-            </ul>
-            <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-            <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
-          </div>
-        </div>
-      </article>
-      <!-- blog post -->
-      <article class="col-lg-4 col-sm-6 mb-5">
-        <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb">
-          <div class="card-body">
-            <!-- post meta -->
-            <ul class="list-inline mb-3">
-              <!-- post date -->
-              <li class="list-inline-item mr-3 ml-0">August 24, 2018</li>
-              <!-- author -->
-              <li class="list-inline-item mr-3 ml-0">By Alex Pitt</li>
-            </ul>
-            <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-            <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-<!-- /blogs -->
+
+<!-- SECCION DONDE TERMINA EL CONTENIDO DE CADA PAGINA CORRESPONDIENTE-->
 
 <!-- footer -->
 <footer>
-  <!-- newsletter -->
+  <!--newsletter
   <div class="newsletter">
     <div class="container">
       <div class="row">
@@ -370,6 +244,7 @@
       </div>
     </div>
   </div>
+	-->
   <!-- footer content -->
   <div class="footer bg-footer section border-bottom">
     <div class="container">
@@ -407,7 +282,11 @@
           <ul class="list-unstyled">
             <li class="mb-3"><a class="text-color" href="#">Acceso a la Información</a></li>
             <li class="mb-3"><a class="text-color" href="#">Armonización Contable</a></li>
-            <li class="mb-3"><a class="text-color" href="#">Convocatorias</a></li>
+            <li class="mb-3"><a class="text-color" href="#">Consejo Directivo</a></li>
+            <li class="mb-3"><a class="text-color" href="#">Normateca</a></li>
+            <li class="mb-3"><a class="text-color" href="#">Controlatoria Social</a></li>
+            <li class="mb-3"><a class="text-color" href="#">SGCA</a></li>
+            <li class="mb-3"><a class="text-color" href="#">Comité de Ambiental</a></li>
           </ul>
         </div>
       </div>
@@ -455,6 +334,5 @@
 
 <!-- Main Script -->
 <script src="js/script.js"></script>
-
 </body>
 </html>
