@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>SOY ADMIN</title>
+  <title>SIUT WEB</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -143,6 +143,7 @@
   </div>
 </header>
 <!-- /header -->
+
 <!-- Modal -->
 <div class="modal fade" id="signupModalAlumn" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -156,6 +157,21 @@
             <div class="modal-body">
                 <div class="login">
                     <form action="../controlador/guardarAlumno.php" class="row" method="post">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="Matricula" name="Matricula" placeholder="Matricula">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="Name" name="Name" placeholder="Nombre(s)">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="LastName" name="LastName" placeholder="Apellidos">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-3" id="Email" name="Email" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" class="form-control mb-3" id="Password" name="Password" placeholder="Contraseña">
+                        </div>
                         <div class="col-7">
                           <select class="form-select form-control mb-3" name="carrera" aria-label="Default select example">
                               <option selected>-- Selecciona la carrera --</option>
@@ -209,19 +225,42 @@
                         </div>
                       
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="signupMatricula" name="signupMatricula" placeholder="Matricula">
+                            <button type="submit" class="btn btn-primary">Registrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="signupModalProf" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Registro de profesor</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="#" class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="NumEmpleado" name="NumEmpleado" placeholder="Número de empleado">
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Nombre">
+                            <input type="text" class="form-control mb-3" id="NameP" name="NameP" placeholder="Nombre(s)">
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="signupLastName" name="signupLastName" placeholder="Apellidos">
+                            <input type="text" class="form-control mb-3" id="LastNameP" name="LastNameP" placeholder="Apellidos">
                         </div>
                         <div class="col-12">
-                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                            <input type="email" class="form-control mb-3" id="EmailP" name="EmailP" placeholder="Email">
                         </div>
                         <div class="col-12">
-                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Contraseña">
+                            <input type="password" class="form-control mb-3" id="Password" name="Password" placeholder="Contraseña">
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">Registrar</button>
@@ -234,11 +273,11 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="signupModalProfE" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="signupModalMaterias" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content rounded-0 border-0 p-4">
             <div class="modal-header border-0">
-                <h3>Register</h3>
+                <h3>Registro de materias</h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -247,19 +286,58 @@
                 <div class="login">
                     <form action="#" class="row">
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                            <input type="text" class="form-control mb-3" id="idMateria" name="idMateria" placeholder="Identificación de la materia">
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+                            <input type="text" class="form-control mb-3" id="NomMateria" name="NomMateria" placeholder="Nombre de la materia">
                         </div>
                         <div class="col-12">
-                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                            <input type="text" class="form-control mb-3" id="Horas" name="Horas" placeholder="Horas">
                         </div>
                         <div class="col-12">
-                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
+                            <input type="text" class="form-control mb-3" id="Unidades" name="Unidades" placeholder="Numero de unidades totales">
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                          <select class="form-select form-control mb-3" name="carrera" aria-label="Default select example">
+                              <option selected>-- Selecciona la carrera --</option>
+                              <option value="Tecnologias de la Información Área de Desarrollo de Software Multiplataforma">Tecnologias de la Información Área de Desarrollo de Software Multiplataforma</option>
+                              <option value="Diseño y Moda industrial Área producción">Diseño y Moda industrial Área producción</option>
+                              <option value="Agricultura Sustentable y Protegida">Agricultura Sustentable y Protegida</option>
+                              <option value="Terapia Fisica y Rehabilitación">Terapia Fisica y Rehabilitación</option>
+                              <option value="Mantenimiento Área Industrial">Mantenimiento Área Industrial</option>
+                              <option value="Desarrollo de Negocios">Desarrollo de Negocios</option>
+                              <option value="Procesos Alimenticios">Procesos Alimenticios</option>
+                              <option value="Energias Renovables">Energias Renovables</option>
+                              <option value="Contaduria">Contaduria</option>
+                              <option value="Mecánica">Mecánica</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                          <select class="form-select form-control mb-3" name="nivel" aria-label="Default select example">
+                          <option selected>-- Selecciona nivel de estudios --</option>
+                              <option value="TSU">TSU</option>
+                              <option value="Licenciatura">Licenciatura</option>
+                              <option value="Ingeniería">Ingeniería</option>
+                          </select>
+                        </div>
+                        <div class="col-6">
+                          <select class="form-select form-control mb-3" name="grado" aria-label="Default select example">
+                          <option selected>-- Selecciona el grado --</option>
+                              <option value="1er cuatrimestre">1er cuatrimestre</option>
+                              <option value="2do cuatrimestre">2do cuatrimestre</option>
+                              <option value="3er cuatrimestre">3er cuatrimestre</option>
+                              <option value="4to cuatrimestre">4to cuatrimestre</option>
+                              <option value="5to cuatrimestre">5to cuatrimestre</option>
+                              <option value="7mo cuatrimestre">7mo cuatrimestre</option>
+                              <option value="8vo cuatrimestre">8vo cuatrimestre</option>
+                              <option value="9no cuatrimestre">9no cuatrimestre</option>
+                              <option value="10mo cuatrimestre">10mo cuatrimestre</option>
+                              <option value="11vo cuatrimestre">11vo cuatrimestre</option>
+                          </select>
+                        </div>
+                        
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Registrar</button>
                         </div>
                     </form>
                 </div>
@@ -267,35 +345,48 @@
         </div>
     </div>
 </div>
+
 <!-- Modal -->
-<!-- <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="signupModalCarrera" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content rounded-0 border-0 p-4">
             <div class="modal-header border-0">
-                <h3>Login</h3>
+                <h3>Registro de nueva carrera</h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form action="#" class="row">
-                    <div class="col-12">
-                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
-                    </div>
-                    <div class="col-12">
-                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
-                    </div>
-                    <div class="col-12">
-                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">LOGIN</button>
-                    </div>
-                </form>
+                <div class="login">
+                    <form action="#" class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="ClaveCarrera" name="ClaveCarrera" placeholder="Clave de la carrera">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="NameC" name="NameC" placeholder="Nombre">
+                        </div>
+                        <div class="col-6">
+                          <select class="form-select form-control mb-3" name="nivelC" aria-label="Default select example">
+                          <option selected>-- Selecciona nivel de estudios --</option>
+                              <option value="TSU">TSU</option>
+                              <option value="Licenciatura">Licenciatura</option>
+                              <option value="Ingeniería">Ingeniería</option>
+                          </select>
+                        </div>
+                        <!-- <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="LastNameP" name="LastNameP" placeholder="Apellidos">
+                        </div> -->
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Registrar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div> -->
+</div>
+
+
 
 <!-- page title -->
 <section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
@@ -333,7 +424,7 @@
               <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
             </a> -->
             <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p> -->
-            <a href="blog-single.html" class="btn btn-primary">Registrar Materias</a>
+            <a href="blog-single.html" class="btn btn-primary"  data-toggle="modal" data-target="#signupModalMaterias">Registrar Materias</a>
           </div>
         </div>
       </article>
@@ -394,70 +485,10 @@
               <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
             </a>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p> -->
-            <a href="blog-single.html" class="btn btn-primary" data-toggle="modal" data-target="#signupModalProf">Registrar Carrera</a>
+            <a href="blog-single.html" class="btn btn-primary" data-toggle="modal" data-target="#signupModalCarrera">Registrar Carrera</a>
           </div>
         </div>
       </article>
-      <!-- blog post -->
-      <!-- <article class="col-lg-4 col-sm-6 mb-5">
-        <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="Post thumb">
-          <div class="card-body"> -->
-            <!-- post meta -->
-            <!-- <ul class="list-inline mb-3"> -->
-              <!-- post date -->
-              <!-- <li class="list-inline-item mr-3 ml-0">August 28, 2018</li> -->
-              <!-- author -->
-              <!-- <li class="list-inline-item mr-3 ml-0">By Somrat Sorkar</li>
-            </ul>
-            <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-            <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
-          </div>
-        </div>
-      </article> -->
-      <!-- blog post -->
-      <!-- <article class="col-lg-4 col-sm-6 mb-5">
-        <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/blog/post-2.jpg" alt="Post thumb">
-          <div class="card-body"> -->
-            <!-- post meta -->
-            <!-- <ul class="list-inline mb-3"> -->
-              <!-- post date -->
-              <!-- <li class="list-inline-item mr-3 ml-0">August 13, 2018</li> -->
-              <!-- author -->
-              <!-- <li class="list-inline-item mr-3 ml-0">By Jonathon Drew</li>
-            </ul>
-            <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-            <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
-          </div>
-        </div>
-      </article> -->
-      <!-- blog post -->
-      <!-- <article class="col-lg-4 col-sm-6 mb-5">
-        <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb">
-          <div class="card-body"> -->
-            <!-- post meta -->
-            <!-- <ul class="list-inline mb-3"> -->
-              <!-- post date -->
-              <!-- <li class="list-inline-item mr-3 ml-0">August 24, 2018</li> -->
-              <!-- author -->
-              <!-- <li class="list-inline-item mr-3 ml-0">By Alex Pitt</li> -->
-            <!-- </ul>
-            <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-            <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
-          </div>
-        </div>
-      </article> -->
     </div>
   </div>
 </section>

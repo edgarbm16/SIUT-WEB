@@ -56,7 +56,16 @@
           <ul class="list-inline">
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">Noticias</a></li>
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">¡Soy Utsoe!</a></li>
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
+            <!-- <li class=""></li> -->
+            <li class="list-inline-item nav-item dropdown view"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">login</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModalA">Alumnos</a>
+                  <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModalP">Profesores</a>
+                  <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal">Administrador</a>
+                </div>    
+            </li>
+            <!-- <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li> -->
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">Buscar</a></li>
           </ul>
         </div>
@@ -145,7 +154,7 @@
 </header>
 <!-- /header -->
 <!-- Modal -->
-<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content rounded-0 border-0 p-4">
             <div class="modal-header border-0">
@@ -177,31 +186,92 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content rounded-0 border-0 p-4">
             <div class="modal-header border-0">
-                <h3>Login</h3>
+                <h3>Inicia Sesión</h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form action="#" class="row">
+                <form action="../controlador/validar.php" class="row" method="post">
                     <div class="col-12">
-                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                        <input type="text" class="form-control mb-3" id="loginUsuario" name="loginUsuario" placeholder="Nombre de usuario" required>
                     </div>
                     <div class="col-12">
-                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Contraseña" required>
                     </div>
                     <div class="col-12">
-                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                        <button type="submit" class="btn btn-primary">Entrar</button>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                      <br>
+                      <button type="submit" class="btn btn-primary" style="background-color: #4b4949dc;">Recuperar contraseña</button>
+                    </div>    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="loginModalA" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Inicia Sesión</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="../controlador/validarAlumno.php" class="row" method="post">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginUsuario" name="loginUsuario" placeholder="Nombre de usuario" required>
                     </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Contraseña" required>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </div>
+                    <div class="col-12">
+                      <br>
+                      <button type="submit" class="btn btn-primary" style="background-color: #4b4949dc;">Recuperar contraseña</button>
+                    </div>    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="loginModalP" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Inicia Sesión</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="../controlador/validarProfesor.php" class="row" method="post">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginUsuario" name="loginUsuario" placeholder="Nombre de usuario" required>
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Contraseña" required>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </div>
+                    <div class="col-12">
+                      <br>
+                      <button type="submit" class="btn btn-primary" style="background-color: #4b4949dc;">Recuperar contraseña</button>
+                    </div>    
                 </form>
             </div>
         </div>

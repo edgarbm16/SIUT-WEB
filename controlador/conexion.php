@@ -3,7 +3,7 @@
 	define( "HOST",     "localhost" );
 	define( "USER",     "root" );
 	define( "PASSWORD", "" );
-	define( "DATABASE", "siut_db" );	
+	define( "DATABASE", "db_siut" );	
 	
 	
 	

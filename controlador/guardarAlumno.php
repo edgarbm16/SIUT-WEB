@@ -5,11 +5,11 @@
 
     $params = array (
 
-        "signupMatricula" => $_POST['signupMatricula'],
-        "signupName" => $_POST['signupName'],
-        "signupLastName" => $_POST['signupLastName'],
-        "signupEmail" => $_POST['signupEmail'],
-        "signupPassword" => $_POST['signupPassword'],
+        "Matricula" => $_POST['Matricula'],
+        "Name" => $_POST['Name'],
+        "LastName" => $_POST['LastName'],
+        "Email" => $_POST['Email'],
+        "Password" => $_POST['Password'],
         "carrera" => $_POST['carrera'],
         "nivel" => $_POST['nivel'],
         "grupo" => $_POST['grupo'],
