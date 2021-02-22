@@ -57,15 +57,15 @@
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">Noticias</a></li>
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">¡Soy Utsoe!</a></li>
             <!-- <li class=""></li> -->
-            <li class="list-inline-item nav-item dropdown view"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            <!-- <li class="list-inline-item nav-item dropdown view"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">login</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModalA">Alumnos</a>
                   <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModalP">Profesores</a>
                   <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal">Administrador</a>
                 </div>    
-            </li>
-            <!-- <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li> -->
+            </li> -->
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">Buscar</a></li>
           </ul>
         </div>
@@ -205,6 +205,7 @@
                     <div class="col-12">
                         <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Contraseña" required>
                     </div>
+                    
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary">Entrar</button>
                     </div>
@@ -218,7 +219,7 @@
     </div>
 </div>
 
-<div class="modal fade" id="loginModalA" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- <div class="modal fade" id="loginModalA" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content rounded-0 border-0 p-4">
             <div class="modal-header border-0">
@@ -235,6 +236,7 @@
                     <div class="col-12">
                         <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Contraseña" required>
                     </div>
+                    <div class="g-recaptcha" data-sitekey="6LczWVwaAAAAAOSLrwVaiqbMq4u7-gHSBv6ziW8i"></div>
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary">Entrar</button>
                     </div>
@@ -276,7 +278,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- hero slider -->
 <section class="hero-section overlay bg-cover" data-background="images/banner/banner-1.jpg">

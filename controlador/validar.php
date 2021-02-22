@@ -15,38 +15,25 @@
     $db = Database::getInstance();
     $conn = $db->getConnection();
     $sesion = new Modelo($conn);
+    
 
-    list($valor,$error)= $sesion->validaUsuario($params);
+    list($valor,$error,$Tipo)= $sesion->validaUsuario($params);
     if(empty($valor)){
         echo "<script>alert('El usuario o contraseña son incorrectos');
         window.location.href='../vistas/index.php';
         </script>";
-    }else{
-        echo "<script>alert('Bienvenido');
-        window.location.href='../vistas/inicio_admistrador.php';
-        </script>";
-    }
-
-    // list($valorAlumno,$errorAlumno) = $sesion->validaAlumno($params);
-    // if(empty($valorAlumno)){
-    //     echo "<script>alert('El usuario o contraseña son incorrectos');
-    //     window.location.href='../vistas/index.php';
-    //     </script>";
-    // }else{
-    //     echo "<script>alert('Bienvenido');
-    //     window.location.href='../vistas/blog.html';
-    //     </script>";
-    // }
-
-    // list($valorProfesor,$errorProfesor) = $sesion->validaProfesor($params);
-    // if(empty($valorProfesor)){
-    //     echo "<script>alert('El usuario o contraseña son incorrectos');
-    //     window.location.href='../vistas/index.php';
-    //     </script>";
-    // }else{
-    //     echo "<script>alert('Bienvenido');
-    //     window.location.href='../vistas/courses.html';
-    //     </script>";
-    // }
-
+        }if($Tipo == 3){
+            echo "<script>alert('Bienvenido');
+            window.location.href='../vistas/inicio_admistrador.php';
+            </script>";
+        }elseif($Tipo == 2){
+            echo "<script>alert('Bienvenido');
+            window.location.href='../vistas/alumnos-Inicio.php';
+            </script>";
+        }elseif($Tipo == 1){
+            echo "<script>alert('Bienvenido');
+            window.location.href='../vistas/profesores-Inicio.php';
+            </script>";
+        }
+    
 ?>
