@@ -388,7 +388,7 @@ if(isset($_SESSION['Usuario'])){
                         <div class="col-12">
                             <input type="text" class="form-control mb-3" id="Unidades" name="Unidades" placeholder="Numero de unidades totales">
                         </div>
-                        <div class="col-12">
+                        <!-- <div class="col-12">
                           <select class="form-select form-control mb-3" name="carrera" aria-label="Default select example">
                               <option selected>-- Selecciona la carrera --</option>
                               <option value="Tecnologias de la Información Área de Desarrollo de Software Multiplataforma">Tecnologias de la Información Área de Desarrollo de Software Multiplataforma</option>
@@ -425,7 +425,7 @@ if(isset($_SESSION['Usuario'])){
                               <option value="10mo cuatrimestre">10mo cuatrimestre</option>
                               <option value="11vo cuatrimestre">11vo cuatrimestre</option>
                           </select>
-                        </div>
+                        </div> -->
                         
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">Registrar</button>
@@ -478,7 +478,7 @@ if(isset($_SESSION['Usuario'])){
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="ModalCuatrimestre" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- <div class="modal fade" id="ModalCuatrimestre" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content rounded-0 border-0 p-4">
             <div class="modal-header border-0">
@@ -518,9 +518,6 @@ if(isset($_SESSION['Usuario'])){
                               <option value="Vespertino">Estadia</option>
                           </select>
                         </div>
-                        <!-- <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="LastNameP" name="LastNameP" placeholder="Apellidos">
-                        </div> -->
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">Registrar</button>
                         </div>
@@ -529,7 +526,7 @@ if(isset($_SESSION['Usuario'])){
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 
@@ -549,110 +546,79 @@ if(isset($_SESSION['Usuario'])){
 </section>
 <!-- /page title -->
 
-<!-- blogs -->
+<!-- Registros -->
 <section class="section">
   <div class="container">
     <div class="row">
-      <!-- blog post -->
+
+      <!-- Carrera -->
       <article class="col-lg-3 col-sm-6 mb-5">
         <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <!-- <img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="Post thumb"> -->
-          <div class="card-body">
-            <!-- post meta -->
-            <!-- <ul class="list-inline mb-3"> -->
-              <!-- post date -->
-              <!-- <li class="list-inline-item mr-3 ml-0">August 28, 2018</li> -->
-              <!-- author -->
-              <!-- <li class="list-inline-item mr-3 ml-0">By Somrat Sorkar</li>
-            </ul> -->
-            <!-- <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a> -->
-            <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p> -->
-            <a href="blog-single.html" class="btn btn-primary"  data-toggle="modal" data-target="#ModalMaterias">Registrar Materias</a>
+          <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb">
+          <div class="card-body mx-auto">
+            <h4 class="card-title">Datos de la carrera.</h4>
+            <a href="" class="btn btn-primary" data-toggle="modal" data-target="#ModalCarrera">Registra carrera</a>
           </div>
         </div>
       </article>
-      <!-- blog post -->
+    
+      <!-- Materias -->
       <article class="col-lg-3 col-sm-6 mb-5">
         <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <!-- <img class="card-img-top rounded-0" src="images/blog/post-2.jpg" alt="Post thumb"> -->
-          <div class="card-body">
-            <!-- post meta -->
-            <!-- <ul class="list-inline mb-3"> -->
-              <!-- post date -->
-              <!-- <li class="list-inline-item mr-3 ml-0">August 13, 2018</li> -->
-              <!-- author -->
-              <!-- <li class="list-inline-item mr-3 ml-0">By Jonathon Drew</li> -->
-            <!-- </ul>
-            <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p> -->
-            <!-- <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a></li> -->
-            <a href="blog-single.html" class="btn btn-primary" data-toggle="modal" data-target="#ModalAlumn">Registrar Alumno</a>
+          <img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="Post thumb">
+          <div class="card-body mx-auto">
+            <h4 class="card-title">Datos de la materia.</h4>
+            <a href="" class="btn btn-primary"  data-toggle="modal" data-target="#ModalMaterias">Registra materia</a>
           </div>
         </div>
       </article>
-      <!-- blog post -->
+
+     
+      <!-- Profesor -->
       <article class="col-lg-3 col-sm-6 mb-5">
         <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <!-- <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb"> -->
-          <div class="card-body">
-            <!-- post meta -->
-            <!-- <ul class="list-inline mb-3"> -->
-              <!-- post date -->
-              <!-- <li class="list-inline-item mr-3 ml-0">August 24, 2018</li> -->
-              <!-- author -->
-              <!-- <li class="list-inline-item mr-3 ml-0">By Alex Pitt</li>
-            </ul>
-            <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p> -->
-            <a href="blog-single.html" class="btn btn-primary" data-toggle="modal" data-target="#ModalProf">Registrar Profesor</a>
+          <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb">
+          <div class="card-body mx-auto">
+          <h4 class="card-title">Datos del profesor.</h4>
+            <a href="" class="btn btn-primary" data-toggle="modal" data-target="#ModalProf">Registra profesor</a>
           </div>
         </div>
       </article>
-      <!-- blog post -->
-      <article class="col-lg-3 col-sm-6 mb-5">
+
+       <!-- Alumno -->
+       <article class="col-lg-3 col-sm-6 mb-5">
         <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <!-- <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb"> -->
-          <div class="card-body">
-            <!-- post meta -->
-            <!-- <ul class="list-inline mb-3"> -->
-              <!-- post date -->
-              <!-- <li class="list-inline-item mr-3 ml-0">August 24, 2018</li> -->
-              <!-- author -->
-              <!-- <li class="list-inline-item mr-3 ml-0">By Alex Pitt</li>
-            </ul>
-            <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p> -->
-            <a href="blog-single.html" class="btn btn-primary" data-toggle="modal" data-target="#ModalCarrera">Registrar Carrera</a>
+          <img class="card-img-top rounded-0" src="images/blog/post-2.jpg" alt="Post thumb">
+          <div class="card-body mx-auto">
+          <h4 class="card-title">Datos del alumno.</h4>
+            <a href="" class="btn btn-primary" data-toggle="modal" data-target="#ModalAlumn">Registra alumno</a>
           </div>
         </div>
       </article>
-      <article class="col-lg-3 col-sm-6 mb-5">
+
+       <!-- Alumno -->
+       <article class="col-lg-3 col-sm-6 mb-5 mx-auto" >
         <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <!-- <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb"> -->
-          <div class="card-body">
-            <!-- post meta -->
-            <!-- <ul class="list-inline mb-3"> -->
-              <!-- post date -->
-              <!-- <li class="list-inline-item mr-3 ml-0">August 24, 2018</li> -->
-              <!-- author -->
-              <!-- <li class="list-inline-item mr-3 ml-0">By Alex Pitt</li>
-            </ul>
-            <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p> -->
-            <a href="blog-single.html" class="btn btn-primary" data-toggle="modal" data-target="#ModalCuatrimestre">Registrar Cuatrimestre</a>
+          <img class="card-img-top rounded-0" src="images/blog/post-2.jpg" alt="Post thumb">
+          <div class="card-body mx-auto">
+          <h4 class="card-title">Datos del curso.</h4>
+            <a href="" class="btn btn-primary " data-toggle="modal" data-target="#ModalAlumn">Crear Curso</a>
           </div>
         </div>
       </article>
+
+
+    
+
+      <!-- Cutrismestre? -->
+      <!-- <article class="col-lg-3 col-sm-6 mb-5">
+        <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb">
+          <div class="card-body">
+            <a href="" class="btn btn-primary" data-toggle="modal" data-target="#ModalCuatrimestre">Registrar Cuatrimestre</a>
+          </div>
+        </div>
+      </article> -->
     </div>
   </div>
 </section>
