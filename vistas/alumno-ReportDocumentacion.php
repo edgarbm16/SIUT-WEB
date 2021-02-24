@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-  <title>SIUT WEB</title>
+  <title>SIUT WEB-Reportes</title>
   <i class="fas fa-tilde    "></i>
 
   <!-- mobile responsive meta -->
@@ -73,7 +73,7 @@
 
         <div class="collapse navbar-collapse" id="navigation" style="margin-left: -10px;">
           <ul class="navbar-nav ml-auto text-center">
-            <li class="nav-item active">
+            <li class="nav-item @@inicio">
               <a class="nav-link" href="index.html">INICIO</a>
             </li>
             
@@ -89,11 +89,7 @@
             <li class="nav-item dropdown view">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-<<<<<<< HEAD
-                ADMINISTRADOR
-=======
                 ALUMNOS
->>>>>>> main
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Editar Datos Personales</a>
@@ -101,7 +97,7 @@
                 <a class="dropdown-item" href="#">Reinscripción en Línea</a>
               </div>
             </li>
-            <li class="nav-item dropdown view">
+            <li class="nav-item dropdown view active">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 REPORTES
@@ -109,7 +105,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Adeudos de Alumnos</a>
                     <a class="dropdown-item" href="#">Consulta Promedios</a>
-                    <a class="dropdown-item" href="#">Concultar Documentación Electrónica</a>
+                    <a class="dropdown-item active" href="#">Concultar Documentación Electrónica</a>
                     <a class="dropdown-item" href="#">Concultar Mis Calificaciones</a>
                     <a class="dropdown-item" href="#">Historial de Pagos</a>
                     <a class="dropdown-item" href="#">Reimprime Formato de Inscripción</a>
@@ -211,21 +207,45 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-<<<<<<< HEAD
-        <h2 class="section-title" style="text-align: center;">Pagina de Administrador</h2>
-=======
-        <h2 class="section-title" style="text-align: center;">Espacio para Editar</h2>
->>>>>>> main
+        <h2 class="section-title" style="text-align: center;">Datos Personales</h2>
         <!--Espacio para editar esta seccion sin cambiar las clases 
         	para que no se pierda el diseño
         	*******Si no Requieres de un titulo quita el <h2>******* -->
       </div>
     </div>
     <div class="row justify-content-center">
-    	<!--En este espacio puedes agrear el contenido correspondiente 
-    		a la pagina que te corresponde editar-->
-    		<!--AQUI PUEDES AGREGAR TUS DIV, ETIQUETAS HTML, ETC QUE REQUIERAS y poner
-    			las CLASS que consideres buenas para el diseño-->
+    	<div class="row col-sm-12 col-md-12 col-lg-12">
+         <section class="card p-0 border-primary rounded-0 hover-shadow col-sm-12 col-md-12 col-lg-12">
+          <div class="card-body col-sm-12 col-md-12 col-lg-12">
+            <form action="" class="col-sm-12 col-md-12 col-lg-12" >
+              <div class="form-row">
+                
+                <div class="form-group col-sm-8 col-md-8 col-lg-8">
+                   <div class="col-lg-8">
+                    <img src="images/hombre.svg" alt="" class="img" style=" height: 150px; display: block; margin-left: auto; margin-right: auto;">
+                   </div> 
+                  <br>
+                  <label class="list-inline mb-2">Nombre</label>
+                  <input type="text" name="nombre" disabled="" class="form-control ">
+                  <label class="">Correo Electronico</label>
+                  <input type="email" name="correo" disabled="" class="form-control border-0">
+                </div>
+                <div class="form-group col-md-4 col-sm-4 col-lg-4 ">
+                  <label class="">Tel. Celular</label>
+                  <input type="number" name="celular" disabled="" class="form-control border-0">
+                  <label class="">Tel. Fijo o Casa</label>
+                  <input type="number" name="telefono" disabled="" class="form-control border-0">
+                  <label class="">Tipo de Sangre</label>
+                  <input type="number" name="typesangre" disabled="" class="form-control border-0">
+                  <label class="">Tutor (Padre o Madre)</label>
+                  <input type="number" name="tutor" disabled="" class="form-control border-0">
+                </div>
+                <button type="submit" class="btn-primary" >Aceptar</button>
+              </div>
+            </form>
+          </div>  
+         </section> 
+      </div>
 	</div>
   </div>
 </section>

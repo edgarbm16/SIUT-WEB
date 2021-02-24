@@ -228,7 +228,11 @@
 
 <!-- footer -->
 <footer>
+<<<<<<< HEAD
   <!--newsletter
+=======
+  <!-- newsletter
+>>>>>>> main
   <div class="newsletter">
     <div class="container">
       <div class="row">

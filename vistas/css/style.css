@@ -47,6 +47,10 @@ h1, .h1 {
   h1, .h1 {
     font-size: 45px;
   }
+  table{
+    display: block;
+    overflow-x: auto;
+  }
 }
 
 h2, .h2 {
@@ -56,6 +60,10 @@ h2, .h2 {
 @media (max-width: 575px) {
   h2, .h2 {
     font-size: 30px;
+  }
+  table{
+    display: block;
+    overflow-x: auto;
   }
 }
 
@@ -67,6 +75,10 @@ h3, .h3 {
   h3, .h3 {
     font-size: 20px;
   }
+  table{
+    display: block;
+    overflow-x: auto;
+  }
 }
 
 h4, .h4 {
@@ -76,6 +88,10 @@ h4, .h4 {
 @media (max-width: 575px) {
   h4, .h4 {
     font-size: 18px;
+  }
+  table{
+    display: block;
+    overflow-x: auto;
   }
 }
 
@@ -87,6 +103,10 @@ h5, .h5 {
   h5, .h5 {
     font-size: 16px;
   }
+  table{
+    display: block;
+    overflow-x: auto;
+  }
 }
 
 h6, .h6 {
@@ -96,6 +116,10 @@ h6, .h6 {
 @media (max-width: 575px) {
   h6, .h6 {
     font-size: 14px;
+  }
+  table{
+    display: block;
+    overflow-x: auto;
   }
 }
 
@@ -453,6 +477,10 @@ a h4:hover {
   .overflow-md-hidden {
     overflow: hidden;
   }
+  table{
+    display: block;
+    overflow-x: auto;
+  }
 }
 
 .vertical-align-middle {
@@ -541,11 +569,19 @@ textarea.form-control {
   .navigation {
     background: #1a1a37;
   }
+  table{
+    display: block;
+    overflow-x: auto;
+  }
 }
 
 @media (max-width: 991px) {
   .navbar-collapse {
     background: #1a1a37;
+  }
+  table{
+    display: block;
+    overflow-x: auto;
   }
 }
 
@@ -558,6 +594,10 @@ textarea.form-control {
   .navbar-nav {
     padding-left: 0;
     background: #1a1a37;
+  }
+  table{
+    display: block;
+    overflow-x: auto;
   }
 }
 
@@ -623,6 +663,10 @@ link:focus,
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 20px;
   }
+  table{
+    display: block;
+    overflow-x: auto;
+  }
 }
 
 .sticky {
@@ -666,6 +710,10 @@ link:focus,
     -webkit-transform-origin: unset;
             transform-origin: unset;
   }
+  table{
+    display: block;
+    overflow-x: auto;
+  }
 }
 
 .navbar .dropdown-menu.show {
@@ -676,6 +724,10 @@ link:focus,
   .navbar .dropdown-menu.show {
     visibility: visible;
     display: block;
+  }
+  table{
+    display: block;
+    overflow-x: auto;
   }
 }
 
@@ -690,6 +742,10 @@ link:focus,
 @media (max-width: 991px) {
   .navbar .dropdown-item {
     text-align: center;
+  }
+  table{
+    display: block;
+    overflow-x: auto;
   }
 }
 
@@ -782,6 +838,10 @@ link:focus,
   .feature-blocks {
     padding-right: 10%;
   }
+  table{
+    display: block;
+    overflow-x: auto;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -793,6 +853,10 @@ link:focus,
   .feature-blocks h3 {
     font-size: 20px;
   }
+  table{
+    display: block;
+    overflow-x: auto;
+  }
 }
 
 @media (max-width: 991px) {
@@ -802,6 +866,10 @@ link:focus,
   }
   .feature-blocks h3 {
     font-size: 25px;
+  }
+  table{
+    display: block;
+    overflow-x: auto;
   }
 }
 
@@ -843,6 +911,10 @@ link:focus,
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+  }
+  table{
+    display: block;
+    overflow-x: auto;
   }
 }
 
@@ -946,6 +1018,10 @@ link:focus,
 @media (max-width: 575px) {
   .newsletter-block {
     padding-left: 15px;
+  }
+  table{
+    display: block;
+    overflow-x: auto;
   }
 }
 

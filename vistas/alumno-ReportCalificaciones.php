@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-  <title>SIUT WEB</title>
+  <title>SIUT WEB-Reportes</title>
   <i class="fas fa-tilde    "></i>
 
   <!-- mobile responsive meta -->
@@ -29,6 +29,25 @@
   <!--Favicon-->
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+  <style>
+    @media screen and (max-width: 320px){
+      table{
+        display: block;
+        overflow-x: auto;
+      }
+      tr:nth-of-type(2n){
+        background-color: inherit; 
+      }
+    }
+    @media screen and (max-width: 600px) {
+      table{
+        width: 90%;
+        display: block;
+        overflow: auto;
+      }
+    }
+  </style>
 
 </head>
 <body>
@@ -73,7 +92,7 @@
 
         <div class="collapse navbar-collapse" id="navigation" style="margin-left: -10px;">
           <ul class="navbar-nav ml-auto text-center">
-            <li class="nav-item active">
+            <li class="nav-item @@inicio">
               <a class="nav-link" href="index.html">INICIO</a>
             </li>
             
@@ -89,11 +108,7 @@
             <li class="nav-item dropdown view">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-<<<<<<< HEAD
-                ADMINISTRADOR
-=======
                 ALUMNOS
->>>>>>> main
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Editar Datos Personales</a>
@@ -101,7 +116,7 @@
                 <a class="dropdown-item" href="#">Reinscripción en Línea</a>
               </div>
             </li>
-            <li class="nav-item dropdown view">
+            <li class="nav-item dropdown view active">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 REPORTES
@@ -110,7 +125,7 @@
                     <a class="dropdown-item" href="#">Adeudos de Alumnos</a>
                     <a class="dropdown-item" href="#">Consulta Promedios</a>
                     <a class="dropdown-item" href="#">Concultar Documentación Electrónica</a>
-                    <a class="dropdown-item" href="#">Concultar Mis Calificaciones</a>
+                    <a class="dropdown-item active" href="#">Concultar Mis Calificaciones</a>
                     <a class="dropdown-item" href="#">Historial de Pagos</a>
                     <a class="dropdown-item" href="#">Reimprime Formato de Inscripción</a>
                 </div>
@@ -211,25 +226,84 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-<<<<<<< HEAD
-        <h2 class="section-title" style="text-align: center;">Pagina de Administrador</h2>
-=======
-        <h2 class="section-title" style="text-align: center;">Espacio para Editar</h2>
->>>>>>> main
+        <h2 class="section-title" style="text-align: center;">Concentrado de Evaluaciones</h2>
         <!--Espacio para editar esta seccion sin cambiar las clases 
         	para que no se pierda el diseño
         	*******Si no Requieres de un titulo quita el <h2>******* -->
       </div>
     </div>
     <div class="row justify-content-center">
-    	<!--En este espacio puedes agrear el contenido correspondiente 
-    		a la pagina que te corresponde editar-->
-    		<!--AQUI PUEDES AGREGAR TUS DIV, ETIQUETAS HTML, ETC QUE REQUIERAS y poner
-    			las CLASS que consideres buenas para el diseño-->
-	</div>
+    	<div class="row col-sm-12 col-md-12 col-lg-12">
+        <section class="card p-0 border-primary rounded-0 hover-shadow col-sm-12 col-md-12 col-lg-12">
+          <div class="card-body col-sm-12 col-md-12 col-lg-12">
+            <form action="" class="col-sm-12 col-md-12 col-lg-12" >
+              <div class="form-row">
+                
+                <div class="form-group col-sm-8 col-md-8 col-lg-8">
+                   <div class="col-lg-8">
+                    <img src="http://201.116.195.195/sinut/Fotos/141810169.jpg" alt="" class="img" style=" height: 150px; display: block; margin-left: auto; margin-right: auto;">
+                   </div> 
+                  <br>
+                  <label class="list-inline mb-2">Nombre</label>
+                  <input type="text" name="nombre" disabled="" class="form-control ">
+                  <label class="">Carrera</label>
+                  <input type="email" name="correo" disabled="" class="form-control border-0">
+                </div>
+                <div class="form-group col-md-4 col-sm-4 col-lg-4 ">
+                  <label class="">Matricular</label>
+                  <input type="number" name="celular" disabled="" class="form-control border-0">
+                  <label class="">Cuatrimestre Actual</label>
+                  <input type="number" name="telefono" disabled="" class="form-control border-0">
+                  <label class="">Estatus</label>
+                  <input type="number" name="typesangre" disabled="" class="form-control border-0">
+                  <label class="">Correo</label>
+                  <input type="number" name="tutor" disabled="" class="form-control border-0">
+                </div>
+                  <label for="">Consultar Boleta ░░ </label>
+                  <br/>
+                  <a href="#" data-toggle="modal" data-target="#calific"> Cuatri. 7-A(Sep-Dic-2020)</a>                
+              </div>
+            </form>
+          </div>  
+        </section>
+        <br> 
+        <div class="modal fade" id="calific" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content rounded-0 border-0 p-4" style="margin-top: 100px;">
+              <table  cellspacing="0" rules="all" border="1" id="cphContenidoGenerak_Grid0" style="font-size:9pt;width:auto;border-collapse:collapse;">
+                <tr style="color:White;background-color:#005FAA;">
+                  <th align="center" scope="col">Faltas</th><th scope="col">Nombre de Materia</th><th scope="col">Nombre del Maestro</th><th scope="col">Ut. 1</th><th scope="col">Ut. 2</th><th scope="col">Ut. 3</th><th scope="col">Ut. 4</th><th scope="col">Global</th><th scope="col">Final</th><th scope="col">Un.</th><th scope="col">Tipo</th><th scope="col">Ut 1 Op 2</th><th scope="col">Ut 2 Op 2</th><th scope="col">Ut 3 Op 2</th><th scope="col">Ut 4 Op 2</th><th scope="col">Ut 1 Op 3</th><th scope="col">Ut 2 Op 3</th><th scope="col">Ut 3 Op 3</th><th scope="col">Ut 4 Op 3</th>
+                </tr>
+                <tr>
+                  <td align="center">0</td><td>Ingl&#233;s VI</td><td>G&#243;mez Ju&#225;rez Juan Manuel</td><td align="center">AU</td><td align="center">AU</td><td align="center">AU</td><td align="center">░░</td><td align="center">&nbsp;</td><td align="center">AU</td><td align="center">3</td><td align="center">Ni</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="center">0</td><td>Metodolog&#237;as para el Desarrollo de Proyectos</td><td>Rico Moreno Jos&#233; Luis</td><td align="center">CA</td><td align="center">CA</td><td align="center">CA</td><td align="center">░░</td><td align="center">&nbsp;</td><td align="center">CA</td><td align="center">3</td><td align="center">In</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="center">0</td><td>Administraci&#243;n del Tiempo</td><td>Moreno Gonz&#225;lez Claudia Adriana</td><td align="center">AU</td><td align="center">AU</td><td align="center">░░</td><td align="center">░░</td><td align="center">&nbsp;</td><td align="center">AU</td><td align="center">2</td><td align="center">Ni</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="center">0</td><td>Experiencia de Usuario</td><td>N&#250;&#241;ez Arroyo Rosa Martha</td><td align="center">AU</td><td align="center">DE</td><td align="center">AU</td><td align="center">░░</td><td align="center">&nbsp;</td><td align="center">AU</td><td align="center">3</td><td align="center">Ni</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="center">0</td><td>Arquitecturas de Software</td><td>ADAME VENEGAS MARIO ALBERTO</td><td align="center">SA</td><td align="center">AU</td><td align="center">DE</td><td align="center">░░</td><td align="center">&nbsp;</td><td align="center">DE</td><td align="center">3</td><td align="center">Ni</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="center">0</td><td>Seguridad Inform&#225;tica</td><td>Cano Contreras Mart&#237;n</td><td align="center">AU</td><td align="center">AU</td><td align="center">AU</td><td align="center">░░</td><td align="center">&nbsp;</td><td align="center">AU</td><td align="center">3</td><td align="center">Ni</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="center">0</td><td>Matem&#225;ticas para Ingenier&#237;a I</td><td>Barr&#243;n Adame Jos&#233; Miguel</td><td align="center">SA</td><td align="center">DE</td><td align="center">AU</td><td align="center">AU</td><td align="center">&nbsp;</td><td align="center">DE</td><td align="center">4</td><td align="center">Ni</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+	  </div>
   </div>
 </section>
-<!-- /blog -->
+  <!-- /blog -->
 
 
 <!-- SECCION DONDE TERMINA EL CONTENIDO DE CADA PAGINA CORRESPONDIENTE-->
@@ -323,6 +397,8 @@
   </div>
 </footer>
 <!-- /footer -->
+
+
 
 <!-- jQuery -->
 <script src="plugins/jQuery/jquery.min.js"></script>

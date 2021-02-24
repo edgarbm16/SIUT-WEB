@@ -1,8 +1,8 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-  <title>SIUT WEB</title>
+  <title>SIUT WEB-Profesor</title>
   <i class="fas fa-tilde    "></i>
 
   <!-- mobile responsive meta -->
@@ -53,7 +53,6 @@
         <div class="col-lg-8 text-center text-lg-right">
           <ul class="list-inline">
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">Noticias</a></li>
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">¡Soy Utsoe!</a></li>
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">Cerrar Sesión</a></li>
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">Buscar</a></li>
           </ul>
@@ -76,28 +75,16 @@
             <li class="nav-item active">
               <a class="nav-link" href="index.html">INICIO</a>
             </li>
-            
-            <li class="nav-item @@blog">
-              <a class="nav-link" href="blog.html">BLOG</a>
-            </li>
-            <li class="nav-item @@events">
-              <a class="nav-link" href="events.html">EVENTOS</a>
-            </li>
             <li class="nav-item @@courses">
               <a class="nav-link" href="courses.html">CURSOS</a>
             </li>
             <li class="nav-item dropdown view">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-<<<<<<< HEAD
-                ADMINISTRADOR
-=======
                 ALUMNOS
->>>>>>> main
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Editar Datos Personales</a>
-                <a class="dropdown-item" href="#">Pagos</a>
+                <a class="dropdown-item" href="#">Carreras</a>
                 <a class="dropdown-item" href="#">Reinscripción en Línea</a>
               </div>
             </li>
@@ -109,10 +96,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Adeudos de Alumnos</a>
                     <a class="dropdown-item" href="#">Consulta Promedios</a>
-                    <a class="dropdown-item" href="#">Concultar Documentación Electrónica</a>
-                    <a class="dropdown-item" href="#">Concultar Mis Calificaciones</a>
-                    <a class="dropdown-item" href="#">Historial de Pagos</a>
-                    <a class="dropdown-item" href="#">Reimprime Formato de Inscripción</a>
+                    <a class="dropdown-item" href="#">Concultar Calificaciones</a>
                 </div>
             </li>
             <li class="nav-item dropdown view">
@@ -122,16 +106,9 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin-left: -60px; ">
                     <a class="dropdown-item" href="#">Cambio de Contraseña</a>
-                    <a class="dropdown-item" href="#">Internacionalización</a>
-                    <a class="dropdown-item" href="#">Cursos de Educación</a>
-                    <a class="dropdown-item" href="#">Servicios Tecnológicos</a>
-                    <a class="dropdown-item" href="#">Incubadora de Negocios</a>
-                    <a class="dropdown-item" href="#">Estadías</a>
+                    <a class="dropdown-item" href="#">Editar Datos Personales</a>
                     <a class="dropdown-item" href="#">Seguimiento de Egresados</a>
                 </div>
-            </li>
-            <li class="nav-item @@contact">
-              <a class="nav-link" href="contact.html">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -207,15 +184,11 @@
 
 <!-- SECCION DONDE SE EDITARA EL CONTENIDO DE CADA PAGINA CORRESPONDIENTE-->
 <!--Si NO ENTIENDES LA FUNCION DE UNA CLASS PREGUNTA!!!  No modifiques la lineas de CLASS-->
-<section class="hero-section by-cover">
+<section class="hero-section by-cover" style="padding: 180px 0 290px">
   <div class="container">
     <div class="row">
       <div class="col-12">
-<<<<<<< HEAD
-        <h2 class="section-title" style="text-align: center;">Pagina de Administrador</h2>
-=======
-        <h2 class="section-title" style="text-align: center;">Espacio para Editar</h2>
->>>>>>> main
+        <h2 class="section-title" style="text-align: center;">Bienvenido Ricolinux</h2>
         <!--Espacio para editar esta seccion sin cambiar las clases 
         	para que no se pierda el diseño
         	*******Si no Requieres de un titulo quita el <h2>******* -->
@@ -226,7 +199,95 @@
     		a la pagina que te corresponde editar-->
     		<!--AQUI PUEDES AGREGAR TUS DIV, ETIQUETAS HTML, ETC QUE REQUIERAS y poner
     			las CLASS que consideres buenas para el diseño-->
-	</div>
+      <div class="row col-sm-12 col-md-12 col-lg-12">
+         <!-- courses -->
+        <section class="section-sm">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="d-flex align-items-center section-title justify-content-between">
+                  <h2 class="mb-0 text-nowrap mr-3">Biblioteca Pública</h2>
+                  <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+                  <div>
+                    <a href="courses.html" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block">see all</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- course list -->
+        <div class="row justify-content-center">
+          <!-- course item -->
+          <div class="col-lg-3 col-sm-3 mb-4">
+            <div class="card p-0 border-primary rounded-0 hover-shadow">
+              <img class="card-img-top rounded-0" src="images/courses/course-1.jpg" alt="course thumb">
+              <div class="card-body">
+                <ul class="list-inline mb-2">
+                  <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>22-11-2012</li>
+                </ul>
+                <a href="course-single.html">
+                  <h4 class="card-title">Photography</h4>
+                </a>
+                <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna.</p>
+                <a href="#" class="btn btn-primary btn-sm">Leer Ahora</a>
+              </div>
+            </div>
+          </div>
+          <!-- course item -->
+          <div class="col-lg-3 col-sm-3 mb-4">
+            <div class="card p-0 border-primary rounded-0 hover-shadow">
+              <img class="card-img-top rounded-0" src="images/courses/course-2.jpg" alt="course thumb">
+              <div class="card-body">
+                <ul class="list-inline mb-2">
+                  <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>21-07-2008</li>
+                </ul>
+                <a href="course-single.html">
+                  <h4 class="card-title">Programming</h4>
+                </a>
+                <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna.</p>
+                <a href="#" class="btn btn-primary btn-sm">Leer Ahora</a>
+              </div>
+            </div>
+          </div>
+          <!-- course item -->
+          <div class="col-lg-3 col-sm-3 mb-4">
+            <div class="card p-0 border-primary rounded-0 hover-shadow">
+              <img class="card-img-top rounded-0" src="images/courses/course-3.jpg" alt="course thumb">
+              <div class="card-body">
+                <ul class="list-inline mb-2">
+                  <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+                </ul>
+                <a href="course-single.html">
+                  <h4 class="card-title">Lifestyle Archives</h4>
+                </a>
+                <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna.</p>
+                <a href="#" class="btn btn-primary btn-sm">Leer Ahora</a>
+              </div>
+            </div>
+          </div>
+          <!-- course item -->
+          <div class="col-lg-3 col-sm-3 mb-4">
+            <div class="card p-0 border-primary rounded-0 hover-shadow">
+              <img class="card-img-top rounded-0" src="images/courses/course-4.jpg" alt="course thumb">
+              <div class="card-body">
+                <ul class="list-inline mb-2">
+                  <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>12-12-2018</li>
+                </ul>
+                <a href="course-single.html">
+                  <h4 class="card-title">Complete Freelancing</h4>
+                </a>
+                <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna.</p>
+                <a href="#" class="btn btn-primary btn-sm">Leer Ahora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /course list -->
+      </div>
+	  </div>
   </div>
 </section>
 <!-- /blog -->
