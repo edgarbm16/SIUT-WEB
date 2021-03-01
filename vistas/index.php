@@ -31,6 +31,10 @@
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
+  <!--JavaScript-->
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+
 </head>
 
 <body>
@@ -204,9 +208,10 @@
                     </div>
                     <div class="col-12">
                         <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Contraseña" required>
-                    </div>
-                    
+                    </div>  
                     <div class="col-12">
+                        <div class="g-recaptcha" data-sitekey="6LcoWGYaAAAAAFY_uB5Xds3RNc5EwnoArowL8xyq"></div>
+                        <br>
                         <button type="submit" class="btn btn-primary">Entrar</button>
                     </div>
                     <div class="col-12">
@@ -214,6 +219,7 @@
                       <button type="submit" class="btn btn-primary" style="background-color: #4b4949dc;">Recuperar contraseña</button>
                     </div>    
                 </form>
+                
             </div>
         </div>
     </div>

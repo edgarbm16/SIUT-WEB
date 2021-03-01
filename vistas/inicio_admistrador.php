@@ -7,7 +7,14 @@ session_start();
 
 if(isset($_SESSION['Usuario'])){
 
-  $Tipo=$_SESSION['Usuario'];
+  $Usuario=$_SESSION['Usuario'];
+  // $Tipo=$_SESSION['Tipo'];
+  $IdUsuarios=$_SESSION['IdUsuarios'];
+
+  // if($Tipo != 3){
+  //   session_destroy();
+  //    header("Location: index.php");
+  // }
 
   }else{
   session_destroy();
@@ -177,7 +184,7 @@ if(isset($_SESSION['Usuario'])){
             </div>
             <div class="modal-body">
                 <div class="login">
-                    <form action="../controlador/guardarAlumno.php" class="row" method="post">
+                    <form action="../controlador/guardarAlumnos.php" class="row" method="post">
                         <div class="col-6">
                             <input type="text" class="form-control mb-3" id="Matricula" name="Matricula" placeholder="Matricula">
                         </div>
@@ -209,15 +216,15 @@ if(isset($_SESSION['Usuario'])){
                         <div class="col-6">
                           <select class="form-select form-control mb-3" name="ZonaDomicilioA" aria-label="Default select example">
                               <option selected>-- Selecciona la zona --</option>
-                              <option value="Masculino">Urbana</option>
-                              <option value="Femenino">Rural</option>
+                              <option value="Urbana">Urbana</option>
+                              <option value="Rural">Rural</option>
                            </select>
                         </div>
                         <div class="col-6">
                             <input type="text" class="form-control mb-3" id="GrupoSanguineoA" name="GrupoSanguineoA" placeholder="Grupo Sanguineo">
                         </div>
                         <div class="col-12">
-                            <input type="email" class="form-control mb-3" id="Email" name="Email" placeholder="Email">
+                            <input type="email" class="form-control mb-3" id="EmailA" name="EmailA" placeholder="Email">
                         </div>
                         <div class="col-6">
                             <input type="text" class="form-control mb-3" id="Usuario" name="Usuario" placeholder="Usuario">
@@ -226,60 +233,14 @@ if(isset($_SESSION['Usuario'])){
                             <input type="password" class="form-control mb-3" id="Password" name="Password" placeholder="Contraseña">
                         </div>
                         <div class="col-12">
-                            <input type="hidden" class="form-control mb-3" id="Tipo" name="Tipo" value="2">
+                            <input type="hidden" class="form-control mb-3" name="Tipo" value="2">
                         </div>
-                        <!-- <div class="col-7">
-                          <select class="form-select form-control mb-3" name="carrera" aria-label="Default select example">
-                              <option selected>-- Selecciona la carrera --</option>
-                              <option value="Tecnologias de la Información Área de Desarrollo de Software Multiplataforma">Tecnologias de la Información Área de Desarrollo de Software Multiplataforma</option>
-                              <option value="Diseño y Moda industrial Área producción">Diseño y Moda industrial Área producción</option>
-                              <option value="Agricultura Sustentable y Protegida">Agricultura Sustentable y Protegida</option>
-                              <option value="Terapia Fisica y Rehabilitación">Terapia Fisica y Rehabilitación</option>
-                              <option value="Mantenimiento Área Industrial">Mantenimiento Área Industrial</option>
-                              <option value="Desarrollo de Negocios">Desarrollo de Negocios</option>
-                              <option value="Procesos Alimenticios">Procesos Alimenticios</option>
-                              <option value="Energias Renovables">Energias Renovables</option>
-                              <option value="Contaduria">Contaduria</option>
-                              <option value="Mecánica">Mecánica</option>
-                            </select>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" name="IdUsuarios">
                         </div>
-                       
-                        <div class="col-5">
-                          <select class="form-select form-control mb-3" name="grado" aria-label="Default select example">
-                          <option selected>-- Selecciona el grado --</option>
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
-                              <option value="10">10</option>
-                              <option value="11">11</option>
-                              <option value="12">12</option>
-                          </select>
+                        <div class="col-12">
+                            <input type="hidden" class="form-control mb-3" name="IdAlumnos">
                         </div>
-                        <div class="col-7">
-                          <select class="form-select form-control mb-3" name="nivel" aria-label="Default select example">
-                          <option selected>-- Selecciona nivel de estudios --</option>
-                              <option value="TSU">TSU</option>
-                              <option value="Licenciatura">Licenciatura</option>
-                              <option value="Ingeniería">Ingeniería</option>
-                          </select>
-                        </div>
-                        <div class="col-5">
-                          <select class="form-select form-control mb-3" name="grupo" aria-label="Default select example">
-                          <option selected>-- Selecciona el grupo --</option>
-                              <option value="A">A</option>
-                              <option value="B">B</option>
-                              <option value="C">C</option>
-                              <option value="D">D</option>
-                              <option value="E">E</option>
-                          </select>
-                        </div> -->
-                      
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">Registrar</button>
                         </div>
@@ -302,7 +263,7 @@ if(isset($_SESSION['Usuario'])){
             </div>
             <div class="modal-body">
                 <div class="login">
-                    <form action="#" class="row">
+                    <form action="../controlador/guardarProfesor.php" class="row" method="post">
                     <div class="col-6">
                             <input type="text" class="form-control mb-3" id="NumEmpleado" name="NumEmpleado" placeholder="Número de empleado">
                         </div>
@@ -351,7 +312,7 @@ if(isset($_SESSION['Usuario'])){
                             <input type="password" class="form-control mb-3" id="Password" name="Password" placeholder="Contraseña">
                         </div>
                         <div class="col-12">
-                            <input type="hidden" class="form-control mb-3" id="Tipo" name="Tipo" value="1">
+                            <input type="hidden"  class="form-control mb-3" id="Tipo" name="Tipo" value="1">
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">Registrar</button>
@@ -364,7 +325,7 @@ if(isset($_SESSION['Usuario'])){
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="ModalMaterias" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="ModalAsignatura" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content rounded-0 border-0 p-4">
             <div class="modal-header border-0">
@@ -375,12 +336,12 @@ if(isset($_SESSION['Usuario'])){
             </div>
             <div class="modal-body">
                 <div class="login">
-                    <form action="#" class="row">
+                    <form action="../controlador/guardarAsignatura.php" class="row" method="post">
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="idMateria" name="idMateria" placeholder="Identificación de la materia">
+                            <input type="text" class="form-control mb-3" id="IdentificacionAsignatura" name="IdentificacionAsignatura" placeholder="Identificación de la materia">
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="NomMateria" name="NomMateria" placeholder="Nombre de la materia">
+                            <input type="text" class="form-control mb-3" id="NombreAsignatura" name="NombreAsignatura" placeholder="Nombre de la materia">
                         </div>
                         <div class="col-12">
                             <input type="text" class="form-control mb-3" id="Horas" name="Horas" placeholder="Horas">
@@ -388,45 +349,6 @@ if(isset($_SESSION['Usuario'])){
                         <div class="col-12">
                             <input type="text" class="form-control mb-3" id="Unidades" name="Unidades" placeholder="Numero de unidades totales">
                         </div>
-                        <!-- <div class="col-12">
-                          <select class="form-select form-control mb-3" name="carrera" aria-label="Default select example">
-                              <option selected>-- Selecciona la carrera --</option>
-                              <option value="Tecnologias de la Información Área de Desarrollo de Software Multiplataforma">Tecnologias de la Información Área de Desarrollo de Software Multiplataforma</option>
-                              <option value="Diseño y Moda industrial Área producción">Diseño y Moda industrial Área producción</option>
-                              <option value="Agricultura Sustentable y Protegida">Agricultura Sustentable y Protegida</option>
-                              <option value="Terapia Fisica y Rehabilitación">Terapia Fisica y Rehabilitación</option>
-                              <option value="Mantenimiento Área Industrial">Mantenimiento Área Industrial</option>
-                              <option value="Desarrollo de Negocios">Desarrollo de Negocios</option>
-                              <option value="Procesos Alimenticios">Procesos Alimenticios</option>
-                              <option value="Energias Renovables">Energias Renovables</option>
-                              <option value="Contaduria">Contaduria</option>
-                              <option value="Mecánica">Mecánica</option>
-                            </select>
-                        </div>
-                        <div class="col-6">
-                          <select class="form-select form-control mb-3" name="nivel" aria-label="Default select example">
-                          <option selected>-- Selecciona nivel de estudios --</option>
-                              <option value="TSU">TSU</option>
-                              <option value="Licenciatura">Licenciatura</option>
-                              <option value="Ingeniería">Ingeniería</option>
-                          </select>
-                        </div>
-                        <div class="col-6">
-                          <select class="form-select form-control mb-3" name="grado" aria-label="Default select example">
-                          <option selected>-- Selecciona el grado --</option>
-                              <option value="1er cuatrimestre">1er cuatrimestre</option>
-                              <option value="2do cuatrimestre">2do cuatrimestre</option>
-                              <option value="3er cuatrimestre">3er cuatrimestre</option>
-                              <option value="4to cuatrimestre">4to cuatrimestre</option>
-                              <option value="5to cuatrimestre">5to cuatrimestre</option>
-                              <option value="7mo cuatrimestre">7mo cuatrimestre</option>
-                              <option value="8vo cuatrimestre">8vo cuatrimestre</option>
-                              <option value="9no cuatrimestre">9no cuatrimestre</option>
-                              <option value="10mo cuatrimestre">10mo cuatrimestre</option>
-                              <option value="11vo cuatrimestre">11vo cuatrimestre</option>
-                          </select>
-                        </div> -->
-                        
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">Registrar</button>
                         </div>
@@ -456,17 +378,6 @@ if(isset($_SESSION['Usuario'])){
                         <div class="col-12">
                             <input type="text" class="form-control mb-3" id="NombreCarrera" name="NombreCarrera" placeholder="Nombre">
                         </div>
-                        <div class="col-6">
-                          <select class="form-select form-control mb-3" name="Nivel" aria-label="Default select example">
-                          <option selected>-- Selecciona nivel de estudios --</option>
-                              <option value="TSU">TSU</option>
-                              <option value="Licenciatura">Licenciatura</option>
-                              <option value="Ingeniería">Ingeniería</option>
-                          </select>
-                        </div>
-                        <!-- <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="LastNameP" name="LastNameP" placeholder="Apellidos">
-                        </div> -->
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">Registrar</button>
                         </div>
@@ -562,13 +473,13 @@ if(isset($_SESSION['Usuario'])){
         </div>
       </article>
     
-      <!-- Materias -->
+      <!-- Asignatura -->
       <article class="col-lg-3 col-sm-6 mb-5">
         <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
           <img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="Post thumb">
           <div class="card-body mx-auto">
             <h4 class="card-title">Datos de la materia.</h4>
-            <a href="" class="btn btn-primary"  data-toggle="modal" data-target="#ModalMaterias">Registra materia</a>
+            <a href="" class="btn btn-primary"  data-toggle="modal" data-target="#ModalAsignatura">Registra materia</a>
           </div>
         </div>
       </article>
@@ -596,7 +507,7 @@ if(isset($_SESSION['Usuario'])){
         </div>
       </article>
 
-       <!-- Alumno -->
+       <!-- Curso -->
        <article class="col-lg-3 col-sm-6 mb-5 mx-auto" >
         <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
           <img class="card-img-top rounded-0" src="images/blog/post-2.jpg" alt="Post thumb">
@@ -732,3 +643,43 @@ if(isset($_SESSION['Usuario'])){
 
 </body>
 </html>
+
+ <!-- <div class="col-12">
+                          <select class="form-select form-control mb-3" name="carrera" aria-label="Default select example">
+                              <option selected>-- Selecciona la carrera --</option>
+                              <option value="Tecnologias de la Información Área de Desarrollo de Software Multiplataforma">Tecnologias de la Información Área de Desarrollo de Software Multiplataforma</option>
+                              <option value="Diseño y Moda industrial Área producción">Diseño y Moda industrial Área producción</option>
+                              <option value="Agricultura Sustentable y Protegida">Agricultura Sustentable y Protegida</option>
+                              <option value="Terapia Fisica y Rehabilitación">Terapia Fisica y Rehabilitación</option>
+                              <option value="Mantenimiento Área Industrial">Mantenimiento Área Industrial</option>
+                              <option value="Desarrollo de Negocios">Desarrollo de Negocios</option>
+                              <option value="Procesos Alimenticios">Procesos Alimenticios</option>
+                              <option value="Energias Renovables">Energias Renovables</option>
+                              <option value="Contaduria">Contaduria</option>
+                              <option value="Mecánica">Mecánica</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                          <select class="form-select form-control mb-3" name="nivel" aria-label="Default select example">
+                          <option selected>-- Selecciona nivel de estudios --</option>
+                              <option value="TSU">TSU</option>
+                              <option value="Licenciatura">Licenciatura</option>
+                              <option value="Ingeniería">Ingeniería</option>
+                          </select>
+                        </div>
+                        <div class="col-6">
+                          <select class="form-select form-control mb-3" name="grado" aria-label="Default select example">
+                          <option selected>-- Selecciona el grado --</option>
+                              <option value="1er cuatrimestre">1er cuatrimestre</option>
+                              <option value="2do cuatrimestre">2do cuatrimestre</option>
+                              <option value="3er cuatrimestre">3er cuatrimestre</option>
+                              <option value="4to cuatrimestre">4to cuatrimestre</option>
+                              <option value="5to cuatrimestre">5to cuatrimestre</option>
+                              <option value="7mo cuatrimestre">7mo cuatrimestre</option>
+                              <option value="8vo cuatrimestre">8vo cuatrimestre</option>
+                              <option value="9no cuatrimestre">9no cuatrimestre</option>
+                              <option value="10mo cuatrimestre">10mo cuatrimestre</option>
+                              <option value="11vo cuatrimestre">11vo cuatrimestre</option>
+                          </select>
+                        </div> -->
+                        

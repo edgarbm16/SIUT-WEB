@@ -5,8 +5,10 @@
 
     $params = array (
 
-        "IdentifcacionCarrera" => $_POST['IdentifcacionCarrera'],
-        "NombreCarrera" => $_POST['NombreCarrera'],
+        "IdentificacionAsignatura" => $_POST['IdentificacionAsignatura'],
+        "NombreAsignatura" => $_POST['NombreAsignatura'],
+        "Horas" => $_POST['Horas'],
+        "Unidades" => $_POST['Unidades'],
        
     );
 
@@ -16,11 +18,11 @@
     $conn = $db->getConnection();
     $sesion = new Modelo($conn);
 
-    list ($valor, $error) = $sesion->agregarCarrera($params);
+    list ($valor, $error) = $sesion->agregarAsignatura($params);
     if(empty($valor)){
         if(!empty($error)) $_SESSION["error"] = $error;
     }else{
-        echo "<script>alert('La carrera fue resgitrado exitosamente');
+        echo "<script>alert('La materia fue resgitrada exitosamente');
         window.location.href='../vistas/inicio_admistrador.php';
         </script>";
     }

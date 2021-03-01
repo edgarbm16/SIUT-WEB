@@ -6,7 +6,14 @@ session_start();
 
 if(isset($_SESSION['Usuario'])){
 
-  $Tipo=$_SESSION['Usuario'];
+  $Usuario=$_SESSION['Usuario'];
+  $Tipo=$_SESSION['Tipo'];
+  $IdUsuarios=$_SESSION['IdUsuarios'];
+
+  if($Tipo != 2){
+    session_destroy();
+     header("Location: index.php");
+  }
 
 }else{
   session_destroy();
