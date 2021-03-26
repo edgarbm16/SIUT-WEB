@@ -3,21 +3,22 @@
 
 //Iniciar sesión
 require_once("../controlador/controlador.php");
-session_start();
+require_once("../controlador/logoutexp.php");
+@session_start();
 
 if(isset($_SESSION['Usuario'])){
 
   $Usuario=$_SESSION['Usuario'];
-  // $Tipo=$_SESSION['Tipo'];
+  $Tipo=$_SESSION['Tipo'];
   $IdUsuarios=$_SESSION['IdUsuarios'];
 
-  // if($Tipo != 3){
-  //   session_destroy();
-  //    header("Location: index.php");
-  // }
+  if($Tipo != 3){
+    @session_destroy();
+     header("Location: index.php");
+  }
 
   }else{
-  session_destroy();
+  @session_destroy();
   echo "<script>alert('Incia Sesión');
   window.location.href='../vistas/index.php';
   </script>";
@@ -82,7 +83,7 @@ if(isset($_SESSION['Usuario'])){
         <div class="col-lg-8 text-center text-lg-right">
           <ul class="list-inline">
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">Noticias</a></li>
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="../controlador/logout.php">Cerrar Sesión</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block"  onclick="CerrarSesion()" >Cerrar Sesión</a></li>
             <!-- <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="" data-toggle="modal" data-target="#loginModal">login</a></li> -->
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">Buscar</a></li>
           </ul>
@@ -172,6 +173,42 @@ if(isset($_SESSION['Usuario'])){
 </header>
 <!-- /header -->
 
+<div class="modal fade" id="ModalUsuario" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Registro de usuario del alumno</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="../controlador/guardarUsuarios.php" class="row" method="post">
+                        <div class="col-6">
+                            <input type="text" class="form-control mb-3" id="Usuario" name="Usuario" placeholder="Usuario" required>
+                        </div>
+                        <div class="col-6">
+                            <input type="password" class="form-control mb-3" id="Password" name="Password" placeholder="Contraseña" required>
+                        </div>
+                        <div class="col-6">
+                          <select class="form-select form-control mb-3" name="Tipo" aria-label="Default select example" required>
+                              <option selected>-- Selecciona el tipo de usuario --</option>
+                              <option value="1">Profesor</option>
+                              <option value="2">Alumno</option>
+                              <option value="3">Administrador</option>
+                          </select>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Registrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Modal -->
 <div class="modal fade" id="ModalAlumn" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -186,26 +223,26 @@ if(isset($_SESSION['Usuario'])){
                 <div class="login">
                     <form action="../controlador/guardarAlumnos.php" class="row" method="post">
                         <div class="col-6">
-                            <input type="text" class="form-control mb-3" id="Matricula" name="Matricula" placeholder="Matricula">
+                            <input type="text" class="form-control mb-3" id="Matricula" name="Matricula" placeholder="Matricula" required>
                         </div>
                         <div class="col-6">
-                            <input type="text" class="form-control mb-3" id="NombreA" name="NombreA" placeholder="Nombre(s)">
+                            <input type="text" class="form-control mb-3" id="NombreA" name="NombreA" placeholder="Nombre(s)" required>
                         </div>
                         <div class="col-6">
-                            <input type="text" class="form-control mb-3" id="ApellidoPA" name="ApellidoPA" placeholder="Apellido paterno">
+                            <input type="text" class="form-control mb-3" id="ApellidoPA" name="ApellidoPA" placeholder="Apellido paterno" required>
                         </div>
                         <div class="col-6">
-                            <input type="text" class="form-control mb-3" id="ApellidoMA" name="ApellidoMA" placeholder="Apellido materno">
+                            <input type="text" class="form-control mb-3" id="ApellidoMA" name="ApellidoMA" placeholder="Apellido materno" required>
                         </div>
                         <div class="col-6">
-                          <select class="form-select form-control mb-3" name="SexoA" aria-label="Default select example">
+                          <select class="form-select form-control mb-3" name="SexoA" aria-label="Default select example" required>
                               <option selected>-- Selecciona el sexo --</option>
                               <option value="Masculino">Masculino</option>
                               <option value="Femenino">Femenino</option>
                           </select>
                         </div>
                         <div class="col-6">
-                          <input type="date" class="form-control mb-3" id="FechaNA" name="FechaNA" placeholder="Fecha de Nacimiento">
+                          <input type="date" class="form-control mb-3" id="FechaNA" name="FechaNA" placeholder="Fecha de Nacimiento" required>
                         </div>
                         <div class="col-6">
                             <input type="text" class="form-control mb-3" id="TelCasaA" name="TelCasaA" placeholder="Telefono de Casa">
@@ -214,32 +251,20 @@ if(isset($_SESSION['Usuario'])){
                             <input type="text" class="form-control mb-3" id="TelCelularA" name="TelCelularA" placeholder="Telefono celular">
                         </div>
                         <div class="col-6">
-                          <select class="form-select form-control mb-3" name="ZonaDomicilioA" aria-label="Default select example">
+                          <select class="form-select form-control mb-3" name="ZonaDomicilioA" aria-label="Default select example" required> 
                               <option selected>-- Selecciona la zona --</option>
                               <option value="Urbana">Urbana</option>
                               <option value="Rural">Rural</option>
                            </select>
                         </div>
                         <div class="col-6">
-                            <input type="text" class="form-control mb-3" id="GrupoSanguineoA" name="GrupoSanguineoA" placeholder="Grupo Sanguineo">
+                            <input type="text" class="form-control mb-3" id="GrupoSanguineoA" name="GrupoSanguineoA" placeholder="Grupo Sanguineo" required>
                         </div>
                         <div class="col-12">
-                            <input type="email" class="form-control mb-3" id="EmailA" name="EmailA" placeholder="Email">
-                        </div>
-                        <div class="col-6">
-                            <input type="text" class="form-control mb-3" id="Usuario" name="Usuario" placeholder="Usuario">
-                        </div>
-                        <div class="col-6">
-                            <input type="password" class="form-control mb-3" id="Password" name="Password" placeholder="Contraseña">
-                        </div>
-                        <div class="col-12">
-                            <input type="hidden" class="form-control mb-3" name="Tipo" value="2">
+                            <input type="email" class="form-control mb-3" id="EmailA" name="EmailA" placeholder="Email" required>
                         </div>
                         <div class="col-12">
                             <input type="text" class="form-control mb-3" name="IdUsuarios">
-                        </div>
-                        <div class="col-12">
-                            <input type="hidden" class="form-control mb-3" name="IdAlumnos">
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">Registrar</button>
@@ -250,6 +275,7 @@ if(isset($_SESSION['Usuario'])){
         </div>
     </div>
 </div>
+
 
 <!-- Modal -->
 <div class="modal fade" id="ModalProf" tabindex="-1" role="dialog" aria-hidden="true">
@@ -265,26 +291,26 @@ if(isset($_SESSION['Usuario'])){
                 <div class="login">
                     <form action="../controlador/guardarProfesor.php" class="row" method="post">
                     <div class="col-6">
-                            <input type="text" class="form-control mb-3" id="NumEmpleado" name="NumEmpleado" placeholder="Número de empleado">
+                            <input type="text" class="form-control mb-3" id="NumEmpleado" name="NumEmpleado" placeholder="Número de empleado" required>
                         </div>
                         <div class="col-6">
-                            <input type="text" class="form-control mb-3" id="NombreP" name="NombreP" placeholder="Nombre(s)">
+                            <input type="text" class="form-control mb-3" id="NombreP" name="NombreP" placeholder="Nombre(s)" required>
                         </div>
                         <div class="col-6">
-                            <input type="text" class="form-control mb-3" id="ApellidoPP" name="ApellidoPP" placeholder="Apellido paterno">
+                            <input type="text" class="form-control mb-3" id="ApellidoPP" name="ApellidoPP" placeholder="Apellido paterno" required>
                         </div>
                         <div class="col-6">
-                            <input type="text" class="form-control mb-3" id="ApellidoMP" name="ApellidoMP" placeholder="Apellido materno">
+                            <input type="text" class="form-control mb-3" id="ApellidoMP" name="ApellidoMP" placeholder="Apellido materno" required>
                         </div>
                         <div class="col-6">
-                          <select class="form-select form-control mb-3" name="SexoP" aria-label="Default select example">
+                          <select class="form-select form-control mb-3" name="SexoP" aria-label="Default select example" required>
                               <option selected>-- Selecciona el sexo --</option>
                               <option value="Masculino">Masculino</option>
                               <option value="Femenino">Femenino</option>
                           </select>
                         </div>
                         <div class="col-6">
-                          <input type="date" class="form-control mb-3" id="FechaNP" name="FechaNP" placeholder="Fecha de Nacimiento">
+                          <input type="date" class="form-control mb-3" id="FechaNP" name="FechaNP" placeholder="Fecha de Nacimiento" required>
                         </div>
                         <div class="col-6">
                             <input type="text" class="form-control mb-3" id="TelCasaP" name="TelCasaP" placeholder="Telefono de Casa">
@@ -293,26 +319,20 @@ if(isset($_SESSION['Usuario'])){
                             <input type="text" class="form-control mb-3" id="TelCelularP" name="TelCelularP" placeholder="Telefono celular">
                         </div>
                         <div class="col-6">
-                          <select class="form-select form-control mb-3" name="ZonaDomicilioP" aria-label="Default select example">
+                          <select class="form-select form-control mb-3" name="ZonaDomicilioP" aria-label="Default select example" required>
                               <option selected>-- Selecciona la zona --</option>
                               <option value="Masculino">Urbana</option>
                               <option value="Femenino">Rural</option>
                            </select>
                         </div>
                         <div class="col-6">
-                            <input type="text" class="form-control mb-3" id="GrupoSanguineoP" name="GrupoSanguineoP" placeholder="Grupo Sanguineo">
+                            <input type="text" class="form-control mb-3" id="GrupoSanguineoP" name="GrupoSanguineoP" placeholder="Grupo Sanguineo" required>
                         </div>
                         <div class="col-12">
-                            <input type="email" class="form-control mb-3" id="EmailP" name="EmailP" placeholder="Email">
-                        </div>
-                        <div class="col-6">
-                            <input type="text" class="form-control mb-3" id="Usuario" name="Usuario" placeholder="Usuario">
-                        </div>
-                        <div class="col-6">
-                            <input type="password" class="form-control mb-3" id="Password" name="Password" placeholder="Contraseña">
+                            <input type="email" class="form-control mb-3" id="EmailP" name="EmailP" placeholder="Email" required>
                         </div>
                         <div class="col-12">
-                            <input type="hidden"  class="form-control mb-3" id="Tipo" name="Tipo" value="1">
+                            <input type="text" class="form-control mb-3" name="IdUsuarios">
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">Registrar</button>
@@ -325,7 +345,7 @@ if(isset($_SESSION['Usuario'])){
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="ModalAsignatura" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="ModalMateria" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content rounded-0 border-0 p-4">
             <div class="modal-header border-0">
@@ -336,18 +356,18 @@ if(isset($_SESSION['Usuario'])){
             </div>
             <div class="modal-body">
                 <div class="login">
-                    <form action="../controlador/guardarAsignatura.php" class="row" method="post">
+                    <form action="../controlador/guardarMateria.php" class="row" method="post">
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="IdentificacionAsignatura" name="IdentificacionAsignatura" placeholder="Identificación de la materia">
+                            <input type="text" class="form-control mb-3" id="NumeroMateria" name="NumeroMateria" placeholder="Identificación de la materia" required> 
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="NombreAsignatura" name="NombreAsignatura" placeholder="Nombre de la materia">
+                            <input type="text" class="form-control mb-3" id="NombreMateria" name="NombreMateria" placeholder="Nombre de la materia" required>
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="Horas" name="Horas" placeholder="Horas">
+                            <input type="text" class="form-control mb-3" id="HorasM" name="HorasM" placeholder="Horas" required>
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="Unidades" name="Unidades" placeholder="Numero de unidades totales">
+                            <input type="text" class="form-control mb-3" id="UnidadesTotalesM	" name="UnidadesTotalesM" placeholder="Numero de unidades totales" required>
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">Registrar</button>
@@ -373,10 +393,10 @@ if(isset($_SESSION['Usuario'])){
                 <div class="login">
                     <form action="../controlador/guardarCarrera.php" class="row" method="post">
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="IdentifcacionCarrera" name="IdentifcacionCarrera" placeholder="Identificación de la carrera">
+                            <input type="text" class="form-control mb-3" id="IdentifcacionCarrera" name="IdentifcacionCarrera" placeholder="Identificación de la carrera" required>
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="NombreCarrera" name="NombreCarrera" placeholder="Nombre">
+                            <input type="text" class="form-control mb-3" id="NombreCarrera" name="NombreCarrera" placeholder="Nombre" required>
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">Registrar</button>
@@ -479,7 +499,18 @@ if(isset($_SESSION['Usuario'])){
           <img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="Post thumb">
           <div class="card-body mx-auto">
             <h4 class="card-title">Datos de la materia.</h4>
-            <a href="" class="btn btn-primary"  data-toggle="modal" data-target="#ModalAsignatura">Registra materia</a>
+            <a href="" class="btn btn-primary"  data-toggle="modal" data-target="#ModalMateria">Registra materia</a>
+          </div>
+        </div>
+      </article>
+
+       <!-- Profesor usuario -->
+       <article class="col-lg-3 col-sm-6 mb-5">
+        <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb">
+          <div class="card-body mx-auto">
+          <h4 class="card-title">Sesión de usuario.</h4>
+            <a href="" class="btn btn-primary" data-toggle="modal" data-target="#ModalUsuario">Registra sesión</a>
           </div>
         </div>
       </article>
@@ -508,7 +539,7 @@ if(isset($_SESSION['Usuario'])){
       </article>
 
        <!-- Curso -->
-       <article class="col-lg-3 col-sm-6 mb-5 mx-auto" >
+       <article class="col-lg-3 col-sm-6 mb-5" >
         <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
           <img class="card-img-top rounded-0" src="images/blog/post-2.jpg" alt="Post thumb">
           <div class="card-body mx-auto">
@@ -640,6 +671,22 @@ if(isset($_SESSION['Usuario'])){
 
 <!-- Main Script -->
 <script src="js/script.js"></script>
+
+
+
+<script>
+  function CerrarSesion(){
+    var resp = window.confirm("¿Deseas cerrar sesión?");
+    if(resp == true){
+      window.alert('¡Hasta la proxima!');
+      window.location.href='../controlador/logout.php';
+    }else{
+      return false;
+    }
+
+  }
+</script>
+
 
 </body>
 </html>

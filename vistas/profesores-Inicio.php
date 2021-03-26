@@ -3,7 +3,7 @@
 
 //Iniciar sesión
 require_once("../controlador/controlador.php");
-session_start();
+@session_start();
 
 if(isset($_SESSION['Usuario'])){
 
@@ -12,12 +12,12 @@ if(isset($_SESSION['Usuario'])){
   $IdUsuarios=$_SESSION['IdUsuarios'];
 
   if($Tipo != 1){
-    session_destroy();
+    @session_destroy();
      header("Location: index.php");
   }
   
 }else{
-  session_destroy();
+  @session_destroy();
   echo "<script>alert('Incia Sesión');
   window.location.href='../vistas/index.php';
   </script>";
@@ -81,7 +81,7 @@ if(isset($_SESSION['Usuario'])){
         <div class="col-lg-8 text-center text-lg-right">
           <ul class="list-inline">
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">Noticias</a></li>
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="../controlador/logout.php">Cerrar Sesión</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" onclick="CerrarSesion()">Cerrar Sesión</a></li>
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">Buscar</a></li>
           </ul>
         </div>
@@ -427,5 +427,18 @@ if(isset($_SESSION['Usuario'])){
 
 <!-- Main Script -->
 <script src="js/script.js"></script>
+
+<script>
+  function CerrarSesion(){
+    var resp = window.confirm("¿Deseas cerrar sesión?");
+    if(resp == true){
+      window.alert('¡Hasta la proxima!');
+      window.location.href='../controlador/logout.php';
+    }else{
+      return false;
+    }
+
+  }
+</script>
 </body>
 </html>

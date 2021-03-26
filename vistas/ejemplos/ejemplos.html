@@ -1,0 +1,134 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> -->
+    <!-- <h1>ARRIBA LA MAQUINA PRROS</h1> -->
+    <!-- <script>
+        window.alert("ARRIBA LA MAQUINA SEMENTERA");
+    </script> -->
+    <!-- <script>
+        setTimeout(function(){alert("ARRIBA LA MAQUINA");},3000);
+    </script> -->
+    <!-- <script>
+        var edad = prompt("¿Cuantos años tenes pelotudo?");
+        document.write("Tienes: " + edad + " años");
+    </script> -->
+    <!-- <script>
+        if(window.confirm("¿Realmente quieres salir?")){
+            window.alert("Gracias por visitarnos");
+        }
+    </script> -->
+    <!-- <script>
+        var mywindow = window.open("","","width=800, height=400");
+        mywindow.document.write("<p>Hola</p>"); 
+        mywindow.moveTo(300,100);      
+    </script> -->
+<!-- </head>
+<body>
+    
+</body>
+</html> -->
+<!-- <html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script>
+    function vermas(id){
+        if(id=="mas"){
+            document.getElementById("desplegar").style.display="block";
+            document.getElementById("mas").style.display="none";
+        }else{
+            document.getElementById("desplegar").style.display="none";
+            document.getElementById("mas").style.display="inline";
+        }
+    }
+    </script>
+    </head>
+    <body>
+        <h2>¿Cómo será la vida cotidiana en el mundo pospandemia?</h2>
+        <p>
+            Cuando todo esto haya terminado y volvamos a salir a las calles con normalidad,
+            quizá el mundo que dejamos en marzo de 2020 sea completamente distinto
+            al que nos encontremos y nuestro estilo de vida tenga que adaptarse
+            a una nueva realidad. <br><br> Frog, firma especializada en diseño, innovación
+            y estrategia, dio a conocer su ‘Reporte Anual de Tendencias 2021’.
+            En él destaca las transformaciones profundas que se gestaron durante
+            este prolongado periodo de confinamiento, en el cual la tecnología
+            adquirió mayor relevancia para mantener la vida funcionando.
+            <a href="#" onclick="vermas('mas');" id="mas">... [leer más]</a>
+        </p>
+        <p id="desplegar" style="display:none;">
+        El estudio resalta dos experiencias que llegaron para quedarse,
+        y que son resultado de los cambios gestados durante este periodo
+        que habrán de permanecer en el mundo pospandemia. <br><br>
+        <b>El trabajo Remoto</b><br>
+        El home office demostró ser un modelo viable, por lo que es posible
+        que en el futuro se diseñen nuevas experiencias más inmersivas
+        para los trabajadores remotos. Esto con la finalidad que no pierdan
+        la sensación de conexión con sus compañeros de oficina.
+        5G, Realidad Aumentada y Realidad Virtual podrían ser las encargadas
+        de hacer que eso suceda.<br><br>
+        <b>Un nuevo estilo de vida</b><br>
+        En un futuro la tecnología podría impulsar nuevas experiencias online
+        y offline que sean más personalizadas a través de herramientas
+        como la Realidad Virtual o los implantes neuronales. Así como se escucha.
+        Estos últimos tendrían un papel fundamental en la forma en cómo aprendemos,
+        nos comunicamos y trabajamos.
+        <a href="#" onclick="vermas('menos');" id="menos">... [leer menos]</a>
+        </p>
+</body>
+</html> -->
+<!-- <html>
+<head>
+    <title>Eventos con el mouse</title>
+    <meta name="tipo_contenido" content="text/html;"
+    http-equiv="content-type" charset="utf-8">
+</head>
+    <body>
+        <p onclick="alert('Hola')">Un clic para saludar</p>
+        </br>
+        </br>
+        <p ondblclick="alert('Adios')">Doble clic para despedirte</p>
+    </body>
+</html> -->
+<!-- <html>
+    <head>
+        <title>Eventos con el mouse</title>
+        <meta name="tipo_contenido" content="text/html;"
+        http-equiv="content-type" charset="utf-8">
+    </head>
+    <body>
+        <p id="colores">Un clic rojo, doble clic verde</p>
+            <script>
+                function color(elEvento){
+                    evento = elEvento || window.event;
+                    tipo = evento.type;
+                    if (tipo == "click") {
+                    this.style.color = "red";
+                    }
+                    else if (tipo == "dblclick") {
+                    this.style.color = "green";
+                    }
+                }
+                window.onload = function() {
+                    document.getElementById("colores").onclick = color;
+                    document.getElementById("colores").ondblclick = color;
+                }
+            </script>
+    </body>
+</html> -->
+<html>
+    <head>
+        <title>Eventos con el mouse</title>
+        <meta name="tipo_contenido" content="text/html;"
+        http-equiv="content-type" charset="utf-8">
+    </head>
+<body>
+    <p>Escribe algo dentro del cuadro de texto:</p>
+    <input type="text" onkeypress="press()">
+        <script>
+            function press() {
+            alert("Tu presionaste una tecla dentro del cuadro de texto");
+            }
+        </script>
+</body>
+</html>

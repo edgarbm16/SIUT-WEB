@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1 id="titulo" onmouseover="myFunction3()">¿Ya terminaste la tesis?</h1>
+    <!-- <p>¿Ya terminaste la tesis?</p> -->
+    <button onclick="myFunction1()">SI</button>
+    <button onclick="myFunction2()">NO</button>
+    <p id="texto"></p>
+        <script>
+            function myFunction1() {
+                document.getElementById("texto").innerHTML = "¡Ya soy un Ingeniero!";
+            }
+            function myFunction2() {
+                document.getElementById("texto").innerHTML = "Soy estudiante de ingeniería";
+            }
+            function myFunction3() {
+			  var f3 = document.getElementById("titulo");
+			  f3.style.color = "red";
+            }
+        </script>
+</body>
+</html>

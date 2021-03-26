@@ -16,9 +16,7 @@
         "ZonaDomicilioP" => $_POST['ZonaDomicilioP'],
         "GrupoSanguineoP" => $_POST['GrupoSanguineoP'],
         "EmailP" => $_POST['EmailP'],
-        "Usuario" => $_POST['Usuario'],
-        "Password" => $_POST['Password'],
-        "Tipo" => $_POST['Tipo'],
+        "IdUsuarios" => $_POST['IdUsuarios'],
 
     );
 

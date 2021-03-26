@@ -5,10 +5,10 @@
 
     $params = array (
 
-        "IdentificacionAsignatura" => $_POST['IdentificacionAsignatura'],
-        "NombreAsignatura" => $_POST['NombreAsignatura'],
-        "Horas" => $_POST['Horas'],
-        "Unidades" => $_POST['Unidades'],
+        "NumeroMateria" => $_POST['NumeroMateria'],
+        "NombreMateria" => $_POST['NombreMateria'],
+        "HorasM" => $_POST['HorasM'],
+        "UnidadesTotalesM" => $_POST['UnidadesTotalesM'],
        
     );
 
@@ -18,7 +18,7 @@
     $conn = $db->getConnection();
     $sesion = new Modelo($conn);
 
-    list ($valor, $error) = $sesion->agregarAsignatura($params);
+    list ($valor, $error) = $sesion->agregarMateria($params);
     if(empty($valor)){
         if(!empty($error)) $_SESSION["error"] = $error;
     }else{

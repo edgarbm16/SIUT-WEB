@@ -19,19 +19,19 @@
 
     list($valor,$error,$Tipo)= $sesion->validaUsuario($params);
     if(empty($valor)){
-        echo "<script>alert('El usuario o contraseña son incorrectos');
+        echo "<script>window.alert('El usuario o contraseña son incorrectos');
         window.location.href='../vistas/index.php';
         </script>";
         }if($Tipo == 3){
-            echo "<script>alert('Bienvenido');
+            echo "<script>window.alert('Bienvenido de vuelta');
             window.location.href='../vistas/inicio_admistrador.php';
             </script>";
         }elseif($Tipo == 2){
-            echo "<script>alert('Bienvenido');
+            echo "<script>window.alert('Bienvenido');
             window.location.href='../vistas/alumnos-Inicio.php';
             </script>";
         }elseif($Tipo == 1){
-            echo "<script>alert('Bienvenido');
+            echo "<script>window.alert('Bienvenido');
             window.location.href='../vistas/profesores-Inicio.php';
             </script>";
         }

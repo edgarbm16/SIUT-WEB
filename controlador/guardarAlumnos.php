@@ -5,7 +5,6 @@
 
     $params = array (
 
-        "IdAlumnos" => $_POST['IdAlumnos'],
         "Matricula" => $_POST['Matricula'],
         "NombreA" => $_POST['NombreA'],
         "ApellidoPA" => $_POST['ApellidoPA'],
@@ -17,9 +16,6 @@
         "ZonaDomicilioA" => $_POST['ZonaDomicilioA'],
         "GrupoSanguineoA" => $_POST['GrupoSanguineoA'],
         "EmailA" => $_POST['EmailA'],
-        "Usuario" => $_POST['Usuario'],
-        "Password" => $_POST['Password'],
-        "Tipo" => $_POST['Tipo'],
         "IdUsuarios" => $_POST['IdUsuarios'],
 
     );

@@ -202,7 +202,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="../controlador/validar.php" class="row" method="post">
+                <form action="../controlador/validar.php" onsubmit="return miFuncion(this)" class="row" method="post" >
                     <div class="col-12">
                         <input type="text" class="form-control mb-3" id="loginUsuario" name="loginUsuario" placeholder="Nombre de usuario" required>
                     </div>
@@ -219,7 +219,6 @@
                       <button type="submit" class="btn btn-primary" style="background-color: #4b4949dc;">Recuperar contraseña</button>
                     </div>    
                 </form>
-                
             </div>
         </div>
     </div>
@@ -874,6 +873,22 @@
 
 <!-- Main Script -->
 <script src="js/script.js"></script>
+
+<script>
+function miFuncion(a) {
+    var response = grecaptcha.getResponse();
+
+    if(response.length == 0){
+        alert("Captcha no verificado");
+        return false;
+      event.preventDefault();
+    } else {
+      alert("Captcha verificado");
+      return true;
+    }
+  }
+</script>
+
 
 </body>
 </html>
