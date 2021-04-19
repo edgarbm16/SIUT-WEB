@@ -89,11 +89,6 @@
             <li class="nav-item dropdown view">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-<<<<<<< HEAD
-                ADMINISTRADOR
-=======
-                ALUMNOS
->>>>>>> main
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Editar Datos Personales</a>
@@ -211,11 +206,11 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-<<<<<<< HEAD
+
         <h2 class="section-title" style="text-align: center;">Pagina de Administrador</h2>
-=======
+
         <h2 class="section-title" style="text-align: center;">Espacio para Editar</h2>
->>>>>>> main
+
         <!--Espacio para editar esta seccion sin cambiar las clases 
         	para que no se pierda el diseño
         	*******Si no Requieres de un titulo quita el <h2>******* -->

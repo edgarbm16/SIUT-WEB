@@ -47,13 +47,13 @@
       <div class="row no-gutters">
         <div class="col-lg-4 text-center text-lg-left">
           <ul class="list-inline d-inline">
-            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://es-la.facebook.com/UTSOE/"><i class="ti-facebook"></i></a></li>
             <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a></li>
           </ul>
         </div>
         <div class="col-lg-8 text-center text-lg-right">
           <ul class="list-inline">
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">Noticias</a></li>
+            <!--<li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">Noticias</a></li>-->
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">¡Soy Utsoe!</a></li>
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">Buscar</a></li>
@@ -80,8 +80,8 @@
             <li class="nav-item @@blog">
               <a class="nav-link" href="blog.html">BLOG</a>
             </li>
-            <li class="nav-item @@courses">
-              <a class="nav-link" href="eventns.html">EVENTOS</a>
+            <li class="nav-item @@courses active">
+              <a class="nav-link" href="eventos.php">EVENTOS</a>
             </li>
             <li class="nav-item @@courses">
               <a class="nav-link" href="courses.html">CURSOS</a>
@@ -93,14 +93,14 @@
                 ESCOLARES
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="teacher.html">Trámites y Servicios</a>
-                <a class="dropdown-item" href="teacher-single.html">Becas</a>
-                <a class="dropdown-item" href="notice.html">Servicios Social</a>
-                <a class="dropdown-item" href="notice-single.html">Resultados de Exámenes</a>
-                <a class="dropdown-item" href="research.html">Proceso de Titulación</a>
-                <a class="dropdown-item" href="scholarship.html">Calendario Escolar</a>
-                <a class="dropdown-item" href="event-single.html">SIUT</a>
-                <a class="dropdown-item" href="blog-single.html">COMUT</a>
+                <a class="dropdown-item" href="">Trámites y Servicios</a>
+                <a class="dropdown-item" href="">Becas</a>
+                <a class="dropdown-item" href="">Servicios Social</a>
+                <a class="dropdown-item" href="">Resultados de Exámenes</a>
+                <a class="dropdown-item" href="">Proceso de Titulación</a>
+                <a class="dropdown-item" href="">Calendario Escolar</a>
+                <a class="dropdown-item" href="">SIUT</a>
+                <a class="dropdown-item" href="">COMUT</a>
               </div>
             </li>
             <li class="nav-item dropdown view">
@@ -109,12 +109,12 @@
                 VINVULACIÓN
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="teacher.html">Internacionalización</a>
-                    <a class="dropdown-item" href="teacher.html">Cursos de Educación</a>
-                    <a class="dropdown-item" href="teacher.html">Servicios Tecnológicos</a>
-                    <a class="dropdown-item" href="teacher.html">Incubadora de Negocios</a>
-                    <a class="dropdown-item" href="teacher.html">Estadías</a>
-                    <a class="dropdown-item" href="teacher.html">Seguimiento a Egresados</a>
+                    <a class="dropdown-item" href="">Internacionalización</a>
+                    <a class="dropdown-item" href="">Cursos de Educación</a>
+                    <a class="dropdown-item" href="">Servicios Tecnológicos</a>
+                    <a class="dropdown-item" href="">Incubadora de Negocios</a>
+                    <a class="dropdown-item" href="">Estadías</a>
+                    <a class="dropdown-item" href="">Seguimiento a Egresados</a>
                 </div>
             </li>
             <li class="nav-item dropdown view">
@@ -123,18 +123,18 @@
                 TRANSPARENCIA
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin-left: -60px; ">
-                    <a class="dropdown-item" href="teacher.html">Acceso a la Información</a>
-                    <a class="dropdown-item" href="teacher.html">Armonización contable</a>
-                    <a class="dropdown-item" href="teacher.html">Consejo Directivo</a>
-                    <a class="dropdown-item" href="teacher.html">Normateca</a>
-                    <a class="dropdown-item" href="teacher.html">Contraloria Social</a>
-                    <a class="dropdown-item" href="teacher.html">Comité de Ética</a>
-                    <a class="dropdown-item" href="teacher.html">SGCA</a>
-                    <a class="dropdown-item" href="teacher.html">Comité De Ambiental</a>
+                    <a class="dropdown-item" href="">Acceso a la Información</a>
+                    <a class="dropdown-item" href="">Armonización contable</a>
+                    <a class="dropdown-item" href="">Consejo Directivo</a>
+                    <a class="dropdown-item" href="">Normateca</a>
+                    <a class="dropdown-item" href="">Contraloria Social</a>
+                    <a class="dropdown-item" href="">Comité de Ética</a>
+                    <a class="dropdown-item" href="">SGCA</a>
+                    <a class="dropdown-item" href="">Comité De Ambiental</a>
                 </div>
             </li>
             <li class="nav-item @@contact">
-              <a class="nav-link" href="contact.html">CONTACT</a>
+              <a class="nav-link" href="contacto.html">CONTACTOS</a>
             </li>
           </ul>
         </div>
@@ -213,21 +213,21 @@
     <div class="row">
       <div class="col-md-8">
         <ul class="list-inline custom-breadcrumb">
-          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="@@page-link">Upcoming Events</a></li>
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="@@page-link">Conoce Nuestros Eventos a Través de Facebook</a></li>
           <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
         </ul>
-        <p class="text-lighten">Our courses offer a good compromise between the continuous assessment favoured by some universities and the emphasis placed on final exams by others.</p>
+        <p class="text-lighten">Encuentra nuestras noticias de ultimo momento y Eventos Proximos</p>
       </div>
     </div>
   </div>
 </section>
 <!-- /page title -->
 
-<!-- courses -->
+<!-- courses 
 <section class="section">
   <div class="container">
     <div class="row">
-      <!-- event -->
+      
       <div class="col-lg-4 col-sm-6 mb-5">
         <div class="card border-0 rounded-0 hover-shadow">
           <div class="card-img position-relative">
@@ -235,7 +235,7 @@
             <div class="card-date"><span>18</span><br>December</div>
           </div>
           <div class="card-body">
-            <!-- location -->
+      
             <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi Lake, Dhaka</p>
             <a href="event-single.html">
               <h4 class="card-title">Lorem ipsum dolor amet, consectetur adipisicing.</h4>
@@ -243,7 +243,7 @@
           </div>
         </div>
       </div>
-      <!-- event -->
+      
       <div class="col-lg-4 col-sm-6 mb-5">
         <div class="card border-0 rounded-0 hover-shadow">
           <div class="card-img position-relative">
@@ -251,7 +251,7 @@
             <div class="card-date"><span>21</span><br>December</div>
           </div>
           <div class="card-body">
-            <!-- location -->
+      
             <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi Lake, Dhaka</p>
             <a href="event-single.html">
               <h4 class="card-title">Lorem ipsum dolor amet, consectetur adipisicing.</h4>
@@ -259,7 +259,7 @@
           </div>
         </div>
       </div>
-      <!-- event -->
+      
       <div class="col-lg-4 col-sm-6 mb-5">
         <div class="card border-0 rounded-0 hover-shadow">
           <div class="card-img position-relative">
@@ -267,7 +267,7 @@
             <div class="card-date"><span>23</span><br>December</div>
           </div>
           <div class="card-body">
-            <!-- location -->
+      
             <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi Lake, Dhaka</p>
             <a href="event-single.html">
               <h4 class="card-title">Lorem ipsum dolor amet, consectetur adipisicing.</h4>
@@ -275,7 +275,7 @@
           </div>
         </div>
       </div>
-      <!-- event -->
+      
       <div class="col-lg-4 col-sm-6 mb-5">
         <div class="card border-0 rounded-0 hover-shadow">
           <div class="card-img position-relative">
@@ -283,7 +283,7 @@
             <div class="card-date"><span>18</span><br>December</div>
           </div>
           <div class="card-body">
-            <!-- location -->
+      
             <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi Lake, Dhaka</p>
             <a href="event-single.html">
               <h4 class="card-title">Lorem ipsum dolor amet, consectetur adipisicing.</h4>
@@ -291,7 +291,7 @@
           </div>
         </div>
       </div>
-      <!-- event -->
+      
       <div class="col-lg-4 col-sm-6 mb-5">
         <div class="card border-0 rounded-0 hover-shadow">
           <div class="card-img position-relative">
@@ -299,7 +299,7 @@
             <div class="card-date"><span>21</span><br>December</div>
           </div>
           <div class="card-body">
-            <!-- location -->
+      
             <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi Lake, Dhaka</p>
             <a href="event-single.html">
               <h4 class="card-title">Lorem ipsum dolor amet, consectetur adipisicing.</h4>
@@ -307,7 +307,7 @@
           </div>
         </div>
       </div>
-      <!-- event -->
+      
       <div class="col-lg-4 col-sm-6 mb-5">
         <div class="card border-0 rounded-0 hover-shadow">
           <div class="card-img position-relative">
@@ -315,7 +315,7 @@
             <div class="card-date"><span>23</span><br>December</div>
           </div>
           <div class="card-body">
-            <!-- location -->
+      
             <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi Lake, Dhaka</p>
             <a href="event-single.html">
               <h4 class="card-title">Lorem ipsum dolor amet, consectetur adipisicing.</h4>
@@ -326,9 +326,12 @@
     </div>
   </div>
 </section>
-<!-- /courses -->
+****************************/courses -->
 
-
+</div>
+<div class="container" style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
+ <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fes-la.facebook.com%2FUTSOE&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+</div>
 <!-- footer -->
 <footer>
   <!-- newsletter -->
@@ -336,7 +339,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
-          <h3 class="text-white">Subscribe Now</h3>
+          <h3 class="text-white">Inscribirme Ahora</h3>
           <form action="#">
             <div class="input-wrapper">
               <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email...">

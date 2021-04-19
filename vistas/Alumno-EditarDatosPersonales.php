@@ -1,8 +1,8 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-  <title>SIUT WEB-Reportes</title>
+  <title>SIUT WEB</title>
   <i class="fas fa-tilde    "></i>
 
   <!-- mobile responsive meta -->
@@ -46,14 +46,14 @@
       <div class="row no-gutters">
         <div class="col-lg-4 text-center text-lg-left">
           <ul class="list-inline d-inline">
-            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://es-la.facebook.com/UTSOE/"><i class="ti-facebook"></i></a></li>
             <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a></li>
           </ul>
         </div>
         <div class="col-lg-8 text-center text-lg-right">
           <ul class="list-inline">
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">Noticias</a></li>
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">¡Soy Utsoe!</a></li>
+            <!--<li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">Noticias</a></li>-->
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="soyutsoe.html">¡Soy Utsoe!</a></li>
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">Cerrar Sesión</a></li>
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">Buscar</a></li>
           </ul>
@@ -73,7 +73,7 @@
 
         <div class="collapse navbar-collapse" id="navigation" style="margin-left: -10px;">
           <ul class="navbar-nav ml-auto text-center">
-            <li class="nav-item @@inicio">
+            <li class="nav-item">
               <a class="nav-link" href="index.html">INICIO</a>
             </li>
             
@@ -91,13 +91,13 @@
                 aria-haspopup="true" aria-expanded="false">
                 ALUMNOS
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="Alumno-EditarDatosPersonales.php">Editar Datos Personales</a>
                 <a class="dropdown-item" href="Alumno-Pagos.php">Pagos</a>
                 <a class="dropdown-item" href="#">Reinscripción en Línea</a>
               </div>
             </li>
-            <li class="nav-item dropdown view active">
+            <li class="nav-item dropdown view">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 REPORTES
@@ -207,46 +207,96 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="section-title" style="text-align: center;">Datos Personales</h2>
+        <h2 class="section-title" style="text-align: center;">Editar Datos Personales</h2>
         <!--Espacio para editar esta seccion sin cambiar las clases 
         	para que no se pierda el diseño
         	*******Si no Requieres de un titulo quita el <h2>******* -->
       </div>
     </div>
     <div class="row justify-content-center">
-    	<div class="row col-sm-12 col-md-12 col-lg-12">
-         <section class="card p-0 border-primary rounded-0 hover-shadow col-sm-12 col-md-12 col-lg-12">
-          <div class="card-body col-sm-12 col-md-12 col-lg-12">
-            <form action="" class="col-sm-12 col-md-12 col-lg-12" >
-              <div class="form-row">
+      <table cellspacing="5" class="FuenteContenidosOpal" align="center">
+        <tr>
+            <td colspan="6">
+                <div id="ContenidoGeneralInformacion">
+  
+                    <table cellspacing="5" class="style2">
+                        <tr>
+                            <td align="center">
+                                <input name="txtTelCasa" type="text" value="" maxlength="10" id="ContenidotxtTelCasa" tabindex="5" title="Solo ingresa los 10 dígitos sin clave lada" class="CentradoTextoCajas" onkeypress="return numeros(this,event)" style="border-color:#003366;width:84px;" />
+                                <span id="TelCasa" style="color:Red;visibility:hidden;">*</span>
+                                <br />
+                                Tel.casa&nbsp;<span id="TelCasa" style="color:Red;visibility:hidden;">*</span>
+                            </td>
+                            <td align="center">
+                                <input name="txtCelular" type="text" value="" maxlength="10" id="ContenidotxtCelular" tabindex="6" title="Solo ingresa los diez dígitos sin clave lada" class="CentradoTextoCajas" onkeypress="return numeros(this,event)" style="border-color:#003366;width:84px;" />
+                                <br />
+                                Tel. celular<span id="Celular" style="color:Red;visibility:hidden;">*</span>
+                            </td>
+                            <td align="center">
+                                <input name="txtEmail" type="text" value="" maxlength="45" id="ContenidotxtEmail" tabindex="7" style="border-color:#003366;font-size:9pt;height:21px;width:190px;" />
+                                <br />
+                                Correo electrónico<span id="Email" class="FuenteContenidosOpal" style="color:Red;visibility:hidden;">*</span>
+                                <span id="cphContenidoGenerak_RequiredFieldValidator27" class="Validadores" style="visibility:hidden;">*</span>
+                            </td>
+                            <td>
+                                Sexo
+                                <input id="Masculino" type="radio" name="ContenidoSexo" value="rdoMasculino" /><label for="cphContenidoGenerak_rdoMasculino">Masculino</label>
+                            </td>
+                            <td>
+                                <input id="Femenino" type="radio" name="ContenidoSexo" value="rdoFemenino" checked="checked" /><label for="cphContenidoGenerak_rdoFemenino">Femenino</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table cellspacing="5" class="style2">
+                                    <tr>
+                                        <td class="style4">
+                                            Zona de domicilio</td>
+                                        <td class="style5">
+                                            <input id="Rural" type="radio" name="ctl00$cphContenidoGenerak$Zona" value="rdoRural" checked="checked" /><label for="Rural">Rural</label>
+                                        </td>
+                                        <td class="style6">
+                                            <input id="Urbana" type="radio" name="ctl00$cphContenidoGenerak$Zona" value="rdoUrbana" /><label for="Urbana">Urbana</label>
+                                        </td>
+                                        <td align="center">
+               <select name="ContenidoTipoDeSangre" id="Tipo" class="CentradoTextoCajas">
+<option selected="selected" value="0">N/S</option>
+    <option value="1">A +</option>
+    <option value="2">B +</option>
+    <option value="3">A -</option>
+    <option value="4">B -</option>
+    <option value="5">O +</option>
+    <option value="6">O -</option>
+    <option value="7">AB +</option>
+    <option value="8">AB -</option>
+    <option value="9">OTRA</option>
+
+</select>
+                <br />
+                Grupo sanguíneo
+               
+                        </td>
+                                        <td align="right">
+                                            <input type="submit" name="ctl00$cphContenidoGenerak$btnGuardar" value="Actualizar datos" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphContenidoGenerak$btnGuardar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="cphContenidoGenerak_btnGuardar" class="Botones" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
                 
-                <div class="form-group col-sm-8 col-md-8 col-lg-8">
-                   <div class="col-lg-8">
-                    <img src="http://201.116.195.195/sinut/Fotos/141810169.jpg" alt="" class="img" style=" height: 150px; display: block; margin-left: auto; margin-right: auto;">
-                   </div> 
-                  <br>
-                  <label class="list-inline mb-2">Nombre</label>
-                  <input type="text" name="nombre" disabled="" class="form-control " placeholder="José Santiago Ávila García">
-                  <label class="">Correo Electronico</label>
-                  <input type="email" name="correo" disabled="" class="form-control border-0" placeholder="santiagoavilagarcia@gmail.com">
-                </div>
-                <div class="form-group col-md-4 col-sm-4 col-lg-4 ">
-                  <label class="">Tel. Celular</label>
-                  <input type="number" name="celular" disabled="" class="form-control border-0" placeholder="4561034762">
-                  <label class="">Tel. Fijo o Casa</label>
-                  <input type="number" name="telefono" disabled="" class="form-control border-0" placeholder="none">
-                  <label class="">Tipo de Sangre</label>
-                  <input type="number" name="typesangre" disabled="" class="form-control border-0" placeholder="A + ">
-                  <label class="">Tutor (Padre o Madre)</label>
-                  <input type="number" name="tutor" disabled="" class="form-control border-0" placeholder="">
-                </div>
-                <button type="submit" class="btn-primary" >Aceptar</button>
-              </div>
-            </form>
-          </div>  
-         </section> 
-      </div>
-	</div>
+</div>
+            </td>
+        </tr>
+        </table>
+
+                    </td>
+                    <td style="width: 9px; background-color: #e9f1f5; background-repeat: repeat-y;">
+                        &nbsp;
+                    </td>
+                </tr>
+            </table>
+
   </div>
 </section>
 <!-- /blog -->

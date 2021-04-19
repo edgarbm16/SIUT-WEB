@@ -24,6 +24,7 @@ body {
   color: #5c5c77;
 }
 
+
 p, .paragraph {
   font-weight: 400;
   color: #5c5c77;
@@ -180,11 +181,45 @@ h6, .h6 {
   font-size: 12px;
   padding: 5px 15px;
 }
+.btn-loginfull {
+  background: #049AEA;
+  color: #fff;
 
+}
+.btn-loginfull {
+    color: #fff;
+    background-color: #0697dc;
+    border-color: #0697dc;
+}
+.btn-loginfull::before {
+  background: #fff;
+}
+.btn-loginfull:active {
+  background: #0697dc !important;
+  color: #0697dc;
+}
+
+.btn-loginfull:active::before {
+  height: 80%;
+}
+
+.btn-loginfull:hover {
+  background: #0697dc;
+  color: #0697dc;
+}
+.btn-loginfull:not(:disabled):not(.disabled).active,
+.btn-loginfull:not(:disabled):not(.disabled):active,
+.show > .btn-loginfull.dropdown-toggle {
+  color: #fff;
+  background-color: #0697dc;
+  border-color: #0697dc;
+}
+//////////////
 .btn-primary {
   background: #00a886;
   color: #fff;
 }
+
 
 .btn-primary::before {
   background: #fff;

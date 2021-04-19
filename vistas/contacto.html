@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>SIUT</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+ 
+  <style>
+    hr{
+      margin-top: 5px;
+      margin-bottom: 5px;
+    } 
+    .mb-lg-0{
+      padding-top: 20px; 
+    }
+  </style>
+</head>
+
+<body>
+  <!-- preloader start -->
+  <div class="preloader">
+    <img src="images/preloader.gif" alt="preloader">
+  </div>
+  <!-- preloader end -->
+
+<!-- header -->
+<header class="fixed-top header">
+ <!-- top header -->
+ <div class="top-header py-2 bg-white">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-lg-4 text-center text-lg-left">
+        <ul class="list-inline d-inline">
+          <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://es-la.facebook.com/UTSOE/"><i class="ti-facebook"></i></a></li>
+          <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-lg-8 text-center text-lg-right">
+        <ul class="list-inline">
+          <!--<li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">Noticias</a></li>-->
+          <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="soyutsoe.html">¡Soy Utsoe!</a></li>
+          <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
+          <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">Buscar</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- navbar -->
+  <div class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <a class="navbar-brand" href="index.html"><img src="images/utsoe.png" alt="logo" style="width: auto; height: 70px;"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation" style="margin-left: -10px;">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item @@home">
+              <a class="nav-link" href="index.html">INICIO</a>
+            </li>
+            <li class="nav-item @@blog">
+              <a class="nav-link" href="blog.html">BLOG</a>
+            </li>
+            <li class="nav-item @@courses">
+              <a class="nav-link" href="eventos.php">EVENTOS</a>
+            </li>
+            <li class="nav-item @@courses">
+              <a class="nav-link" href="courses.html">CURSOS</a>
+            </li>
+            
+            <li class="nav-item dropdown view">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                ESCOLARES
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="">Trámites y Servicios</a>
+                <a class="dropdown-item" href="">Becas</a>
+                <a class="dropdown-item" href="">Servicios Social</a>
+                <a class="dropdown-item" href="">Resultados de Exámenes</a>
+                <a class="dropdown-item" href="">Proceso de Titulación</a>
+                <a class="dropdown-item" href="">Calendario Escolar</a>
+                <a class="dropdown-item" href="">SIUT</a>
+                <a class="dropdown-item" href="">COMUT</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown view">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                VINVULACIÓN
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="">Internacionalización</a>
+                    <a class="dropdown-item" href="">Cursos de Educación</a>
+                    <a class="dropdown-item" href="">Servicios Tecnológicos</a>
+                    <a class="dropdown-item" href="">Incubadora de Negocios</a>
+                    <a class="dropdown-item" href="">Estadías</a>
+                    <a class="dropdown-item" href="">Seguimiento a Egresados</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown view">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                TRANSPARENCIA
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin-left: -60px; ">
+                    <a class="dropdown-item" href="">Acceso a la Información</a>
+                    <a class="dropdown-item" href="">Armonización contable</a>
+                    <a class="dropdown-item" href="">Consejo Directivo</a>
+                    <a class="dropdown-item" href="">Normateca</a>
+                    <a class="dropdown-item" href="">Contraloria Social</a>
+                    <a class="dropdown-item" href="">Comité de Ética</a>
+                    <a class="dropdown-item" href="">SGCA</a>
+                    <a class="dropdown-item" href="">Comité De Ambiental</a>
+                </div>
+            </li>
+            <li class="nav-item active @@contact">
+              <a class="nav-link" href="contacto.html">CONTACTOS</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Register</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="#" class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- page title -->
+<section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary">Directorio de Contacto</a></li>
+          <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
+        </ul>
+        <p class="text-lighten">Conoce a los Directivos y Administrativos de UTSOE</p>
+        <p class="text-white">Teléfonos de Contacto: <strong>01 (456) 643 6265, 7180, 7188 </strong>con las extenciones que se citan</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- contact -->
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h2 class="section-title" style="text-align: center;">Directivos y Administrativos UTSOE</h2>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/Alejandro%20S%C3%A1nchez%20Garc%C3%ADa.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="#">
+              <h4 class="card-title" style="font-size: 90%">Mtro. Alejandro Sánchez García</h4>
+            </a>
+            <div class=" justify-content-between">
+              <span>Rector</sapn>
+              <hr>
+              <span>Extenciones 101 y fax 122 <br><small>rectoria@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/María Susana Acosta Navarrete.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M.en C. María Susana Acosta</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Coordinación Académica</span>
+              <hr>
+              <span>Extensión 114 <br><small>coord_acad@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/María Blanca del Pilar Suárez Jove.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">T.I María Blanca del Pilar Suárez Jove</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Vinculación</span>
+              <hr>
+              <span>Extencion 105 <br><small>bpsuarez@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/José Manuel Padilla Gutiérrez2.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">C.P. José Manuel Padilla G.</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Administración y Finanzas</span>
+              <hr>
+              <span>Extensión 102  y 112<br><small>jmpadillag@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/Miguel Ángel Patiño Ramírez2.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">C.P. Miguel Ángel Patiño R.</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Encargado del Departamento Área Extención Universitaria</span>
+              <hr>
+              <span>Extensión 123 <br><small>mpatinor@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/María del Socorro Corral García.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M.en C. María del Socorro Corral García</h4>
+            </a>
+            <div class="justify-content-between">
+              <span style="font-size: 80%">Dirección de Ing. Metal Mecánica, TSU Mecánica, Ing. Mantenimiento Industrial</span>
+              <hr>
+              <span>Extensión 103 <br><small>mscorral@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/Marco Tulio Aguirre Basilio.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">Ing. Marco Tulio Aguirre Basilio</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Ing. Diseño Textil y Moda, TSU Diseño y Moda Industrial</span>
+              <hr>
+              <span>Extensión 143 <br><small>mtaguirreb@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/Teresa Ramírez Cano.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">MMT. Teresa Ramírez Cano</h4>
+            </a>
+            <div class="justify-content-between">
+              <span style="font-size: 80%">Dirección de Ing. Negocios y Gestión Empresaria. TSU Desarrollo de Negocios, Ing.Financiera y Fiscal, TSU Contaduría</span>
+              <hr>
+              <span>Extensión 106 <br><small>tramirez@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/José Antonio Gordillo Sosa.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">C.aDr.José Antonio Gordillo Sosa</h4>
+            </a>
+            <div class="justify-content-between">
+              <span style="font-size: 90%">Dirección de Ing. Tecnologías de la Información y Comunicación, TSU Tecnologías de la Información y Comunicación</span>
+              <hr>
+              <span>Extensión 121 <br><small>jagordillo@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/Olimpia Liliana Rivas García.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M Olimpia Liliana Rivas G.</h4>
+            </a>
+            <div class="justify-content-between">
+              <span >Dirección de Ing. Procesos Alimentarios, TSU Procesos Alimentarios, Ing Agricultura Sustentable y Protegida</span>
+              <hr>
+              <span>Extensión 115 <br><small>msacosta@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/Lic. Ana María García Hernández.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">Lic. Ana María García Hernández</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección Terapia Fisica Área Rehabilitación</span>
+              <hr>
+              <span><br><small>amgarcia@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/M. en E. R. Humberto Ramos López.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M.enE.R Humberto Ramos López</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Energias Renovables y Protegias</span>
+              <hr>
+              <span> <br><small>hramoslo@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- teacher 
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/María Susana Acosta Navarrete.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M.en C. María Susana Acosta</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Coordinación Académica</span>
+              <hr>
+              <span>Extensión 114 <br><small>coord_acad@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/María Susana Acosta Navarrete.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M.en C. María Susana Acosta</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Coordinación Académica</span>
+              <hr>
+              <span>Extensión 114 <br><small>coord_acad@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/María Susana Acosta Navarrete.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M.en C. María Susana Acosta</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Coordinación Académica</span>
+              <hr>
+              <span>Extensión 114 <br><small>coord_acad@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/María Susana Acosta Navarrete.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M.en C. María Susana Acosta</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Coordinación Académica</span>
+              <hr>
+              <span>Extensión 114 <br><small>coord_acad@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/María Susana Acosta Navarrete.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M.en C. María Susana Acosta</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Coordinación Académica</span>
+              <hr>
+              <span>Extensión 114 <br><small>coord_acad@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/María Susana Acosta Navarrete.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M.en C. María Susana Acosta</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Coordinación Académica</span>
+              <hr>
+              <span>Extensión 114 <br><small>coord_acad@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/María Susana Acosta Navarrete.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M.en C. María Susana Acosta</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Coordinación Académica</span>
+              <hr>
+              <span>Extensión 114 <br><small>coord_acad@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/María Susana Acosta Navarrete.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M.en C. María Susana Acosta</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Coordinación Académica</span>
+              <hr>
+              <span>Extensión 114 <br><small>coord_acad@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/María Susana Acosta Navarrete.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M.en C. María Susana Acosta</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Coordinación Académica</span>
+              <hr>
+              <span>Extensión 114 <br><small>coord_acad@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/María Susana Acosta Navarrete.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M.en C. María Susana Acosta</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Coordinación Académica</span>
+              <hr>
+              <span>Extensión 114 <br><small>coord_acad@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/María Susana Acosta Navarrete.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M.en C. María Susana Acosta</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Coordinación Académica</span>
+              <hr>
+              <span>Extensión 114 <br><small>coord_acad@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/María Susana Acosta Navarrete.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M.en C. María Susana Acosta</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Coordinación Académica</span>
+              <hr>
+              <span>Extensión 114 <br><small>coord_acad@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/María Susana Acosta Navarrete.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M.en C. María Susana Acosta</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Coordinación Académica</span>
+              <hr>
+              <span>Extensión 114 <br><small>coord_acad@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/María Susana Acosta Navarrete.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M.en C. María Susana Acosta</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Coordinación Académica</span>
+              <hr>
+              <span>Extensión 114 <br><small>coord_acad@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-lg-2 col-sm-2 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="http://www.utsoe.edu.mx/images/directivos/María Susana Acosta Navarrete.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title" style="font-size: 90%">M.en C. María Susana Acosta</h4>
+            </a>
+            <div class="justify-content-between">
+              <span>Dirección de Coordinación Académica</span>
+              <hr>
+              <span>Extensión 114 <br><small>coord_acad@utsoe.edu.mx</small></span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      ****************************-->
+    </div>
+  </div>
+</section>
+
+<!-- /contact -->
+
+<!-- gmap -->
+<section class="card">
+  <!-- Google Map -->
+  <!--<div id="map_canvas" data-latitude="51.507351" data-longitude="-0.127758"></div>-->
+  <div class="container col-md-12">
+    <div class="container" style="text-align: center;">
+        <div class="fluid-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34279.99717319182!2d-101.22939782464371!3d20.40167171951796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842c8c5891f42b11%3A0x6e0c6f5d41d82e48!2sUniversidad+Utsoe!5e1!3m2!1ses!2smx!4v1491334232955" width="800" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- /gmap -->
+
+
+<!-- footer -->
+<footer>
+  <!-- newsletter -->
+  <div class="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
+          <h3 class="text-white">Subscribete Ahora</h3>
+          <form action="#">
+            <div class="input-wrapper">
+              <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email...">
+              <button type="submit" value="send" class="btn btn-primary">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer content -->
+  <div class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          <!-- logo -->
+          <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/utsoe.png" alt="logo"></a>
+          <ul class="list-unstyled">
+            <li class="mb-2">Carr. Valle-Huanimaro km 1.2 Valle de Santiago, Gto.</li>
+            <li class="mb-2">(01) 456 643 7180</li>
+            <li class="mb-2">(01) 456 643 7188</li>
+            <li class="mb-2">rectoria@utsoe.edu.mx</li>
+          </ul>
+        </div>
+        <!-- Comunicate -->
+        <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">Comunícate con nosotros</h4>
+          <ul class="list-unstyled">
+            <p class="mb-3" class="text-color" style="text-align: justify-all">Para nosotros es muy importante conocer tus inquietudes, quejas, sugerencias y/o felicitaciones</p>
+          </ul>
+        </div>
+        <!-- links -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">LINKS</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="courses.html">SUIT</a></li>
+            <li class="mb-3"><a class="text-color" href="event.html">COMUT</a></li>
+            <li class="mb-3"><a class="text-color" href="gallary.html">NOTICIAS</a></li>
+            
+          </ul>
+        </div>
+        <!--Sitios de interes-->
+        <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">Sitios de interés</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="#">Acceso a la Información</a></li>
+            <li class="mb-3"><a class="text-color" href="#">Armonización Contable</a></li>
+            <li class="mb-3"><a class="text-color" href="#">Convocatorias</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">Copyright
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 
+            © ABHH</p>
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-facebook text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- filter -->
+<script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

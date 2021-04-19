@@ -73,7 +73,7 @@
           <ul class="list-inline">
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">Noticias</a></li>
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">¡Soy Utsoe!</a></li>
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">Cerrar Sesión</a></li>
+            <li class="list-inline-item btn-danger"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">Cerrar Sesión</a></li>
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">Buscar</a></li>
           </ul>
         </div>
@@ -111,8 +111,8 @@
                 ALUMNOS
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Editar Datos Personales</a>
-                <a class="dropdown-item" href="#">Pagos</a>
+                <a class="dropdown-item" href="Alumno-EditarDatosPersonales.php">Editar Datos Personales</a>
+                <a class="dropdown-item" href="Alumno-Pagos.php">Pagos</a>
                 <a class="dropdown-item" href="#">Reinscripción en Línea</a>
               </div>
             </li>
@@ -124,9 +124,9 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Adeudos de Alumnos</a>
                     <a class="dropdown-item" href="#">Consulta Promedios</a>
-                    <a class="dropdown-item" href="#">Concultar Documentación Electrónica</a>
-                    <a class="dropdown-item active" href="#">Concultar Mis Calificaciones</a>
-                    <a class="dropdown-item" href="#">Historial de Pagos</a>
+                    <a class="dropdown-item" href="alumno-ReportDocumentacion.php">Concultar Documentación Electrónica</a>
+                    <a class="dropdown-item active" href="alumno-ReportCalificaciones.php">Concultar Mis Calificaciones</a>
+                    <a class="dropdown-item" href="Alumno-HistorialDePagos.php">Historial de Pagos</a>
                     <a class="dropdown-item" href="#">Reimprime Formato de Inscripción</a>
                 </div>
             </li>
@@ -245,19 +245,19 @@
                    </div> 
                   <br>
                   <label class="list-inline mb-2">Nombre</label>
-                  <input type="text" name="nombre" disabled="" class="form-control ">
+                  <input type="text" name="nombre" disabled="" class="form-control " placeholder="José Santiago Ávila García">
                   <label class="">Carrera</label>
-                  <input type="email" name="correo" disabled="" class="form-control border-0">
+                  <input type="email" name="correo" disabled="" class="form-control border-0" placeholder="Ing. en Gestión y Desarrollo de Software">
                 </div>
                 <div class="form-group col-md-4 col-sm-4 col-lg-4 ">
                   <label class="">Matricular</label>
-                  <input type="number" name="celular" disabled="" class="form-control border-0">
+                  <input type="number" name="celular" disabled="" class="form-control border-0" placeholder="141810169">
                   <label class="">Cuatrimestre Actual</label>
-                  <input type="number" name="telefono" disabled="" class="form-control border-0">
+                  <input type="number" name="telefono" disabled="" class="form-control border-0" placeholder=" 8">
                   <label class="">Estatus</label>
-                  <input type="number" name="typesangre" disabled="" class="form-control border-0">
+                  <input type="number" name="typesangre" disabled="" class="form-control border-0" placeholder="Regular">
                   <label class="">Correo</label>
-                  <input type="number" name="tutor" disabled="" class="form-control border-0">
+                  <input type="number" name="tutor" disabled="" class="form-control border-0" placeholder="santiagoavilagarcia23z@gmail.com">
                 </div>
                   <label for="">Consultar Boleta ░░ </label>
                   <br/>

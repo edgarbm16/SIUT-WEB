@@ -1,8 +1,8 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-  <title>SIUT WEB-Reportes</title>
+  <title>SIUT WEB</title>
   <i class="fas fa-tilde    "></i>
 
   <!-- mobile responsive meta -->
@@ -73,7 +73,7 @@
 
         <div class="collapse navbar-collapse" id="navigation" style="margin-left: -10px;">
           <ul class="navbar-nav ml-auto text-center">
-            <li class="nav-item @@inicio">
+            <li class="nav-item active">
               <a class="nav-link" href="index.html">INICIO</a>
             </li>
             
@@ -107,8 +107,8 @@
                     <a class="dropdown-item" href="#">Consulta Promedios</a>
                     <a class="dropdown-item" href="alumno-ReportDocumentacion.php">Concultar Documentación Electrónica</a>
                     <a class="dropdown-item" href="alumno-ReportCalificaciones.php">Concultar Mis Calificaciones</a>
-                    <a class="dropdown-item" href="Alumno-HistorialDePagos.php">Historial de Pagos</a>
-                    <a class="dropdown-item" href="#">Reimprime Formato de Inscripción</a>
+                    <a class="dropdown-item active" href="Alumno-HistorialDePagos.php">Historial de Pagos</a>
+                    <a class="dropdown-item" href="">Reimprime Formato de Inscripción</a>
                 </div>
             </li>
             <li class="nav-item dropdown view">
@@ -207,47 +207,41 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="section-title" style="text-align: center;">Datos Personales</h2>
+<!--
+<table>
+  
+ <td id="tblUsuario" style="width: 828px; height: 50px; text-align: right;">
+        <a id="cphNombreUsuario_lnkCerrarSesion" class="btn btn-danger" href="javascript:__doPostBack(&#39;ctl00$cphNombreUsuario$lnkCerrarSesion&#39;,&#39;&#39;)" style="font-size:10pt;">Cerrar sesión</a> &nbsp;
+  </td>
+</table>-->
+        <h2 class="section-title" style="text-align: center;">Historial De Pagos</h2>
         <!--Espacio para editar esta seccion sin cambiar las clases 
         	para que no se pierda el diseño
         	*******Si no Requieres de un titulo quita el <h2>******* -->
       </div>
     </div>
     <div class="row justify-content-center">
-    	<div class="row col-sm-12 col-md-12 col-lg-12">
-         <section class="card p-0 border-primary rounded-0 hover-shadow col-sm-12 col-md-12 col-lg-12">
-          <div class="card-body col-sm-12 col-md-12 col-lg-12">
-            <form action="" class="col-sm-12 col-md-12 col-lg-12" >
-              <div class="form-row">
-                
-                <div class="form-group col-sm-8 col-md-8 col-lg-8">
-                   <div class="col-lg-8">
-                    <img src="http://201.116.195.195/sinut/Fotos/141810169.jpg" alt="" class="img" style=" height: 150px; display: block; margin-left: auto; margin-right: auto;">
-                   </div> 
-                  <br>
-                  <label class="list-inline mb-2">Nombre</label>
-                  <input type="text" name="nombre" disabled="" class="form-control " placeholder="José Santiago Ávila García">
-                  <label class="">Correo Electronico</label>
-                  <input type="email" name="correo" disabled="" class="form-control border-0" placeholder="santiagoavilagarcia@gmail.com">
-                </div>
-                <div class="form-group col-md-4 col-sm-4 col-lg-4 ">
-                  <label class="">Tel. Celular</label>
-                  <input type="number" name="celular" disabled="" class="form-control border-0" placeholder="4561034762">
-                  <label class="">Tel. Fijo o Casa</label>
-                  <input type="number" name="telefono" disabled="" class="form-control border-0" placeholder="none">
-                  <label class="">Tipo de Sangre</label>
-                  <input type="number" name="typesangre" disabled="" class="form-control border-0" placeholder="A + ">
-                  <label class="">Tutor (Padre o Madre)</label>
-                  <input type="number" name="tutor" disabled="" class="form-control border-0" placeholder="">
-                </div>
-                <button type="submit" class="btn-primary" >Aceptar</button>
-              </div>
-            </form>
-          </div>  
-         </section> 
-      </div>
-	</div>
-  </div>
+            <table id="tblContenidoGeneral" cellpadding="0" class="style1">
+                <tr>         
+  <table cellspacing="0" rules="all" border="1" id="cphContenidoGenerak_grdCuatrimestres" style="font-size:11pt;width:685px;border-collapse:collapse;">
+    <tr style="color:White;background-color:#006699;">
+      <th align="center" scope="col">Concepto de cobro</th><th scope="col">Recibo</th><th align="center" scope="col">Monto</th><th scope="col">Cuatrim.</th><th scope="col">Periodo</th><th scope="col">&nbsp;</th>
+      
+    </tr><tr>
+      <td></td><td align="center">
+                    <a id="cphContenidoGenerak_grdCuatrimestres_LinkButton9_0" href="javascript:__doPostBack(&#39;ctl00$cphContenidoGenerak$grdCuatrimestres$ctl02$LinkButton9&#39;,&#39;&#39;)"></a>
+                </td><td></td><td align="center"></td><td></td><td></td>
+    </tr><tr>
+      <td></td><td align="center">
+                    <a id="cphContenidoGenerak_grdCuatrimestres_LinkButton9_1" href="javascript:__doPostBack(&#39;ctl00$cphContenidoGenerak$grdCuatrimestres$ctl03$LinkButton9&#39;,&#39;&#39;)"></a>
+                </td><td></td><td align="center"></td><td></td><td></td>
+    </tr><tr>
+      <td></td><td align="center">
+                    <a id="cphContenidoGenerak_grdCuatrimestres_LinkButton9_2" href="javascript:__doPostBack(&#39;ctl00$cphContenidoGenerak$grdCuatrimestres$ctl04$LinkButton9&#39;,&#39;&#39;)"></a>
+                </td><td></td><td align="center"></td><td></td><td></td>
+    </tr>
+  </table>
+</div>
 </section>
 <!-- /blog -->
 

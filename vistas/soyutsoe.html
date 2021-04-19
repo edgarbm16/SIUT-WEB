@@ -1,9 +1,9 @@
-<<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="zxx">
+
 <head>
-	<meta charset="utf-8">
-  <title>SIUT WEB-Reportes</title>
-  <i class="fas fa-tilde    "></i>
+  <meta charset="utf-8">
+  <title>SIUT WEB</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,8 +31,9 @@
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
 </head>
+
 <body>
-	<!-- preloader start -->
+  <!-- preloader start -->
   <div class="preloader">
     <img src="images/preloader.gif" alt="preloader">
   </div>
@@ -46,15 +47,15 @@
       <div class="row no-gutters">
         <div class="col-lg-4 text-center text-lg-left">
           <ul class="list-inline d-inline">
-            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://es-la.facebook.com/UTSOE/"><i class="ti-facebook"></i></a></li>
             <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a></li>
           </ul>
         </div>
         <div class="col-lg-8 text-center text-lg-right">
           <ul class="list-inline">
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">Noticias</a></li>
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">¡Soy Utsoe!</a></li>
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">Cerrar Sesión</a></li>
+            <!--<li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">Noticias</a></li>-->
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="soyutsoe.html">¡Soy Utsoe!</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">Buscar</a></li>
           </ul>
         </div>
@@ -73,57 +74,63 @@
 
         <div class="collapse navbar-collapse" id="navigation" style="margin-left: -10px;">
           <ul class="navbar-nav ml-auto text-center">
-            <li class="nav-item @@inicio">
+            <li class="nav-item @@home">
               <a class="nav-link" href="index.html">INICIO</a>
             </li>
-            
             <li class="nav-item @@blog">
               <a class="nav-link" href="blog.html">BLOG</a>
             </li>
-            <li class="nav-item @@events">
-              <a class="nav-link" href="events.html">EVENTOS</a>
+            <li class="nav-item @@courses">
+              <a class="nav-link" href="eventns.html">EVENTOS</a>
             </li>
             <li class="nav-item @@courses">
               <a class="nav-link" href="courses.html">CURSOS</a>
             </li>
+            
             <li class="nav-item dropdown view">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                ALUMNOS
+                ESCOLARES
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="Alumno-EditarDatosPersonales.php">Editar Datos Personales</a>
-                <a class="dropdown-item" href="Alumno-Pagos.php">Pagos</a>
-                <a class="dropdown-item" href="#">Reinscripción en Línea</a>
+                <a class="dropdown-item" href="teacher.html">Trámites y Servicios</a>
+                <a class="dropdown-item" href="teacher-single.html">Becas</a>
+                <a class="dropdown-item" href="notice.html">Servicios Social</a>
+                <a class="dropdown-item" href="notice-single.html">Resultados de Exámenes</a>
+                <a class="dropdown-item" href="research.html">Proceso de Titulación</a>
+                <a class="dropdown-item" href="scholarship.html">Calendario Escolar</a>
+                <a class="dropdown-item" href="event-single.html">SIUT</a>
+                <a class="dropdown-item" href="blog-single.html">COMUT</a>
               </div>
             </li>
-            <li class="nav-item dropdown view active">
+            <li class="nav-item dropdown view">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                REPORTES
+                VINVULACIÓN
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Adeudos de Alumnos</a>
-                    <a class="dropdown-item" href="#">Consulta Promedios</a>
-                    <a class="dropdown-item" href="alumno-ReportDocumentacion.php">Concultar Documentación Electrónica</a>
-                    <a class="dropdown-item" href="alumno-ReportCalificaciones.php">Concultar Mis Calificaciones</a>
-                    <a class="dropdown-item" href="Alumno-HistorialDePagos.php">Historial de Pagos</a>
-                    <a class="dropdown-item" href="#">Reimprime Formato de Inscripción</a>
+                    <a class="dropdown-item" href="teacher.html">Internacionalización</a>
+                    <a class="dropdown-item" href="teacher.html">Cursos de Educación</a>
+                    <a class="dropdown-item" href="teacher.html">Servicios Tecnológicos</a>
+                    <a class="dropdown-item" href="teacher.html">Incubadora de Negocios</a>
+                    <a class="dropdown-item" href="teacher.html">Estadías</a>
+                    <a class="dropdown-item" href="teacher.html">Seguimiento a Egresados</a>
                 </div>
             </li>
             <li class="nav-item dropdown view">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                Utilerías
+                TRANSPARENCIA
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin-left: -60px; ">
-                    <a class="dropdown-item" href="#">Cambio de Contraseña</a>
-                    <a class="dropdown-item" href="#">Internacionalización</a>
-                    <a class="dropdown-item" href="#">Cursos de Educación</a>
-                    <a class="dropdown-item" href="#">Servicios Tecnológicos</a>
-                    <a class="dropdown-item" href="#">Incubadora de Negocios</a>
-                    <a class="dropdown-item" href="#">Estadías</a>
-                    <a class="dropdown-item" href="#">Seguimiento de Egresados</a>
+                    <a class="dropdown-item" href="teacher.html">Acceso a la Información</a>
+                    <a class="dropdown-item" href="teacher.html">Armonización contable</a>
+                    <a class="dropdown-item" href="teacher.html">Consejo Directivo</a>
+                    <a class="dropdown-item" href="teacher.html">Normateca</a>
+                    <a class="dropdown-item" href="teacher.html">Contraloria Social</a>
+                    <a class="dropdown-item" href="teacher.html">Comité de Ética</a>
+                    <a class="dropdown-item" href="teacher.html">SGCA</a>
+                    <a class="dropdown-item" href="teacher.html">Comité De Ambiental</a>
                 </div>
             </li>
             <li class="nav-item @@contact">
@@ -136,7 +143,6 @@
   </div>
 </header>
 <!-- /header -->
-
 <!-- Modal -->
 <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -201,62 +207,92 @@
     </div>
 </div>
 
-<!-- SECCION DONDE SE EDITARA EL CONTENIDO DE CADA PAGINA CORRESPONDIENTE-->
-<!--Si NO ENTIENDES LA FUNCION DE UNA CLASS PREGUNTA!!!  No modifiques la lineas de CLASS-->
-<section class="hero-section by-cover">
+<!-- page title -->
+<section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h2 class="section-title" style="text-align: center;">Datos Personales</h2>
-        <!--Espacio para editar esta seccion sin cambiar las clases 
-        	para que no se pierda el diseño
-        	*******Si no Requieres de un titulo quita el <h2>******* -->
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="@@page-link">Filosofía Institucional</a></li>
+          <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
+        </ul>
+        <p class="text-lighten">Política de Igualdad Laboral y No Discriminación para la Administración Pública del Estado de Guanajuato</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- scholarship -->
+<section class="section">
+  <div class="container">
+    <div class="container mb-5">
+      <div class=" col-lg-12 col-md-12 mb-12 mb-md-0">
+        <img class="container" src="http://www.utsoe.edu.mx/images/filosofia_horz.jpg" alt="scholarship news">
+      </div>
+      <div class="row" style="text-align: justify;margin-top: 50px;">
+        <div class="col-md-6">
+          <strong class="mb-4 d-block" style="text-align: center;"><i>Fundamento</i></strong>
+          <p>La presente política, se fundamenta en lo establecido en el requisito 5.3.3.1.1 de la NMX-R025SCFI-2015 en igualdad Laboral y No Discriminación, la cual es una certificación para reconocer a los centros de trabajo públicos y privados que establecen prácticas para la igualdad laboral y no discriminación dentro de sus procesos de gestión y recursos humanos, favoreciendo el desarrollo de las personas trabajadoras. Está dirigida a centros de trabajo de cualquier sector y tamaño, su adaptación es voluntaria y los requisitos de cumplimientos son auditados por una tercera parte.</p>
+        </div>
+        <div class="col-md-6">
+          <strong class="mb-4 d-block" style="text-align: center;"><i>Objetivo</i></strong>
+          <p>La política de Igualdad Laboral y No Discriminación para la Administración Pública del Estado de Guanajuato, tiene por objeto establecer el compromiso de todas y cada una de las personas que integran los centros de trabajo en la entidad, de velar por la defensa de los derechos de las personas trabajadoras de combatir la discriminación, de enaltecer el respeto a la dignidad humana, de promover una cultura de igualdad laboral y no discriminación y de garantizar la igualdad de oportunidades entre mujeres y hombres, dando cumplimiento a lo establecido de la normatividad vigente en la materia de nivel internacional, federal y estatal.</p>
+        </div>
+        <div class="col-md-12">
+          <strong class="mb-4 d-block" style="text-align: center;"><i>Pilítica de Calidad</i></strong>
+          <p>La Universidad Tecnológica del Suroeste de Guanajuato satisface los requisitos de los estudiantes y demás sectores de la sociedad que reciben el servicio educativo y tecnológico, considerando la igualdad laboral y no discriminación, mejorando continuamente la efectividad del SGCA y la competencia del personal con el compromiso de proteger y preservar el medio ambiente cumpliendo con la normatividad aplicable y otros requisitos.</p>
+        </div>
       </div>
     </div>
     <div class="row justify-content-center">
-    	<div class="row col-sm-12 col-md-12 col-lg-12">
-         <section class="card p-0 border-primary rounded-0 hover-shadow col-sm-12 col-md-12 col-lg-12">
-          <div class="card-body col-sm-12 col-md-12 col-lg-12">
-            <form action="" class="col-sm-12 col-md-12 col-lg-12" >
-              <div class="form-row">
-                
-                <div class="form-group col-sm-8 col-md-8 col-lg-8">
-                   <div class="col-lg-8">
-                    <img src="http://201.116.195.195/sinut/Fotos/141810169.jpg" alt="" class="img" style=" height: 150px; display: block; margin-left: auto; margin-right: auto;">
-                   </div> 
-                  <br>
-                  <label class="list-inline mb-2">Nombre</label>
-                  <input type="text" name="nombre" disabled="" class="form-control " placeholder="José Santiago Ávila García">
-                  <label class="">Correo Electronico</label>
-                  <input type="email" name="correo" disabled="" class="form-control border-0" placeholder="santiagoavilagarcia@gmail.com">
-                </div>
-                <div class="form-group col-md-4 col-sm-4 col-lg-4 ">
-                  <label class="">Tel. Celular</label>
-                  <input type="number" name="celular" disabled="" class="form-control border-0" placeholder="4561034762">
-                  <label class="">Tel. Fijo o Casa</label>
-                  <input type="number" name="telefono" disabled="" class="form-control border-0" placeholder="none">
-                  <label class="">Tipo de Sangre</label>
-                  <input type="number" name="typesangre" disabled="" class="form-control border-0" placeholder="A + ">
-                  <label class="">Tutor (Padre o Madre)</label>
-                  <input type="number" name="tutor" disabled="" class="form-control border-0" placeholder="">
-                </div>
-                <button type="submit" class="btn-primary" >Aceptar</button>
-              </div>
-            </form>
-          </div>  
-         </section> 
+      <!-- scholarship item -->
+      
+      <!-- scholarship item -->
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0">
+          <img class="card-img-top rounded-0" src="https://visionindustrial.com.mx/wp-content/uploads/2017/07/LEYES-AMBIENTALES-01-ch.jpg" style="height: 200px;" alt="scholarship-thumb">
+          <div class="card-body">
+            <p class="mb-1">6 Pilares de la Política de Calidad Ambiental</p>
+            <h4 class="card-title mb-3"></h4>
+            <ul class="list-styled">
+              <li>Satisfacer los requisitos de los estudiantes y sociedad</li>
+              <li>Conciderar la igualdad laboral y NO discriminación</li>
+              <li>Mejora Continua de la Efectividad del SGCA</li>
+              <li>Competencia del Personal</li>
+              <li>Proteger y Preservar el Medio Ambiente</li>
+              <li>Cumplimiento de la Normatividad Aplicable y otros Requisitos</li>
+            </ul>
+          </div>
+        </div>
       </div>
-	</div>
+      <!-- scholarship item -->
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0">
+          <img class="card-img-top rounded-0" src="https://generacionverde.com/wp-content/uploads/2017/05/Destacadas1200-x480-min.jpg" style="height: 200px;" alt="scholarship-thumb">
+          <div class="card-body">
+            <p class="mb-1">Objetivos del SGCA</p>
+            <h4 class="card-title mb-3"></h4>
+            <ul class="list-styled">
+              <li>Incrementar la Satisfacción de los Clientes</li>
+              <li>Desarrollar Continuamente la Competencia Personal</li>
+              <li>Mejorar Continuamente la Eficacia y el Desempeño del SGCA</li>
+              <li>Promover una Cultura de Protección y Preservación del Medio Ambiente</li>
+              <li>Propiciar un Ambiente de Igualdad Laboral y no Discriminación</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-<!-- /blog -->
+<!-- /scholarship -->
 
-
-<!-- SECCION DONDE TERMINA EL CONTENIDO DE CADA PAGINA CORRESPONDIENTE-->
 
 <!-- footer -->
 <footer>
-  <!--newsletter
+  <!-- newsletter -->
   <div class="newsletter">
     <div class="container">
       <div class="row">
@@ -272,7 +308,6 @@
       </div>
     </div>
   </div>
-	-->
   <!-- footer content -->
   <div class="footer bg-footer section border-bottom">
     <div class="container">
@@ -310,11 +345,7 @@
           <ul class="list-unstyled">
             <li class="mb-3"><a class="text-color" href="#">Acceso a la Información</a></li>
             <li class="mb-3"><a class="text-color" href="#">Armonización Contable</a></li>
-            <li class="mb-3"><a class="text-color" href="#">Consejo Directivo</a></li>
-            <li class="mb-3"><a class="text-color" href="#">Normateca</a></li>
-            <li class="mb-3"><a class="text-color" href="#">Controlatoria Social</a></li>
-            <li class="mb-3"><a class="text-color" href="#">SGCA</a></li>
-            <li class="mb-3"><a class="text-color" href="#">Comité de Ambiental</a></li>
+            <li class="mb-3"><a class="text-color" href="#">Convocatorias</a></li>
           </ul>
         </div>
       </div>
@@ -362,5 +393,6 @@
 
 <!-- Main Script -->
 <script src="js/script.js"></script>
+
 </body>
 </html>
