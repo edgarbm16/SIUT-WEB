@@ -219,6 +219,9 @@ if(isset($_SESSION['tiempo']) ) {
                         <div class="col-6">
                             <input type="password" class="form-control mb-3" id="Password" name="Password" placeholder="Contraseña" required>
                         </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-3" id="Email" name="Email" placeholder="Email" required>
+                        </div>
                         <div class="col-6">
                           <select class="form-select form-control mb-3" name="Tipo" aria-label="Default select example" required>
                               <option selected>-- Selecciona el tipo de usuario --</option>
@@ -436,59 +439,6 @@ if(isset($_SESSION['tiempo']) ) {
     </div>
 </div>
 
-<!-- Modal -->
-<!-- <div class="modal fade" id="ModalCuatrimestre" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content rounded-0 border-0 p-4">
-            <div class="modal-header border-0">
-                <h3>Registro de nuevo cuatrimestre</h3>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="login">
-                    <form action="../controlador/guardarCarrera.php" class="row" method="post">
-                        <div class="col-12">
-                          <select class="form-select form-control mb-3" name="Grado" aria-label="Default select example">
-                              <option selected>-- Selecciona el grado --</option>
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">10</option>
-                              <option value="11">11</option>
-                              <option value="12">12</option>
-                              <option value="13">13</option>
-                          </select>
-                        </div>
-                        <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="Periodo" name="Periodo" placeholder="Periodo">
-                        </div>
-                        <div class="col-6">
-                          <select class="form-select form-control mb-3" name="Turno" aria-label="Default select example">
-                          <option selected>-- Selecciona el turno --</option>
-                              <option value="Matutino">Matutino</option>
-                              <option value="Vespertino">Vespertino</option>
-                              <option value="Vespertino">Estadia</option>
-                          </select>
-                        </div>
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-primary">Registrar</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-
-
 <!-- page title -->
 <section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
   <div class="container">
@@ -576,19 +526,6 @@ if(isset($_SESSION['tiempo']) ) {
           </div>
         </div>
       </article>
-
-
-    
-
-      <!-- Cutrismestre? -->
-      <!-- <article class="col-lg-3 col-sm-6 mb-5">
-        <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb">
-          <div class="card-body">
-            <a href="" class="btn btn-primary" data-toggle="modal" data-target="#ModalCuatrimestre">Registrar Cuatrimestre</a>
-          </div>
-        </div>
-      </article> -->
     </div>
   </div>
 </section>

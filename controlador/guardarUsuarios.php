@@ -7,6 +7,7 @@
 
         "Usuario" => $_POST['Usuario'],
         "Password" => $_POST['Password'],
+        "Email" => $_POST['Email'],
         "Tipo" => $_POST['Tipo'],
 
     );

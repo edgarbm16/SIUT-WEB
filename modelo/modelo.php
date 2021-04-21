@@ -63,11 +63,12 @@
 			$valor = "";
 			$Usuario = $params["Usuario"];
 			$Password = $params["Password"];
+			$Email =  $params["Email"];
 			$Tipo = $params["Tipo"];
 
-			$query = "INSERT INTO `usuarios` (`Usuario`,`Password`,`Tipo`)";
-			$query .= " VALUES ('".$Usuario."', '".$Password."', '".$Tipo."');";
-			if(!empty( $Usuario ) && !empty( $Password ) && !empty( $Tipo )){ if(! $this->conn->query($query)){
+			$query = "INSERT INTO `usuarios` (`Usuario`,`Password`,`Email`,`Tipo`)";
+			$query .= " VALUES ('".$Usuario."', '".$Password."', '".$Email."', '".$Tipo."');";
+			if(!empty( $Usuario ) && !empty( $Password ) && !empty( $Email ) && !empty( $Tipo )){ if(! $this->conn->query($query)){
 			$error = 'Ocurrio un error ejecutando el query [' . $this->conn->error . ']';
 			}
 			$valor = $this->conn->affected_rows;
